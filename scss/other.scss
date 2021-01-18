@@ -1,0 +1,39 @@
+@import "Ginkgo";
+
+.ds {
+  display: inline-block;
+}
+
+.all_boxs {
+  display: inline-block;
+  width: 100%;
+}
+
+.order_left {
+  float: left !important;
+}
+
+.order_right {
+  float: right !important;
+}
+
+.mob_close {
+  display: inline-block;
+
+  @include range-width(0, 450px) {
+    display: none;
+  }
+}
+
+.mob_open {
+  display: none;
+
+  @include range-width(0, 450px) {
+    display: inline-block;
+  }
+}
+
+
+
+
+

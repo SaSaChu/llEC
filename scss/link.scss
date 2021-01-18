@@ -1,0 +1,29 @@
+@import "Ginkgo";
+
+a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+// footer
+.f_nav {
+  display: inline-block;
+  color: white;
+  font-size: 1rem;
+  float: left;
+  margin-right: 50px;
+
+  &:hover, &:active {
+    color: $blue_l;
+  }
+}
