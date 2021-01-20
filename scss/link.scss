@@ -1,4 +1,5 @@
 @import "Ginkgo";
+@import "color";
 
 a {
   display: inline-block;
@@ -22,8 +23,159 @@ button {
   font-size: 1rem;
   float: left;
   margin-right: 50px;
+  @include transition(all .3s);
 
   &:hover, &:active {
     color: $blue_l;
   }
 }
+
+.pro_link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include transition(all .3s);
+  z-index: 1111;
+
+  &:hover, &:active {
+    border: 2px solid $blue;
+  }
+}
+
+.like {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  z-index: 2222;
+
+  &:after {
+    display: inline-block;
+    content: '\f08a';
+    font-size: 1.2rem;
+    font-family: 'icon';
+    color: rgba(142, 142, 142, 1);
+  }
+
+  &:hover, &:active, &:focus {
+    &:after {
+      content: '\f004';
+      color: red;
+    }
+  }
+}
+
+.btn_car {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2222;
+  background-color: rgba(255, 255, 255, .8);
+  @include border-radius(20px);
+  font-size: 1.3rem;
+  color: $orange;
+  @include transition(all .3s);
+
+  &:hover, &:active, &:focus {
+    background-color: $orange;
+    color: white;
+  }
+}
+
+
+.pro03_btn_box {
+  display: inline-block;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  bottom: -30px;
+  padding: 10px 0; 
+  background-color: white;
+  @include border-radius(4px);
+  color: $blue;
+  font-size: 1.3rem;
+  @include transition(all .3s);
+
+  &:after {
+    display: inline-block;
+    content: attr(title);
+    width: 100%;
+    font-size: 1rem;
+    color: $grey_t;
+    text-decoration: underline;
+  }
+
+  &:hover, &:active {
+    background-color: $blue_l;
+    color: white;
+
+    &:after {
+      color: white;
+    }
+  }
+}
+
+
+.btn_more_grey {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 1px solid $grey_t;
+  font-size: 1.2rem;
+  color: $grey_t;
+  @include border-radius(30px);
+  @include transition(all .3s);
+  
+  &:hover, &:active {
+    border: 1px solid $blue;
+    background-color: $blue;
+    color: white;
+  }
+}
+
+
+.btn_more_blue {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 1px solid $blue;
+  font-size: 1rem;
+  color: $blue;
+  @include border-radius(30px);
+  @include transition(all .3s);
+  
+  &:hover, &:active {
+    border: 1px solid $blue;
+    background-color: $blue;
+    color: white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

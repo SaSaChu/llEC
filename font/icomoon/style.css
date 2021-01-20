@@ -1,18 +1,19 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?7vfwjk');
-  src:  url('fonts/icomoon.eot?7vfwjk#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?7vfwjk') format('truetype'),
-    url('fonts/icomoon.woff?7vfwjk') format('woff'),
-    url('fonts/icomoon.svg?7vfwjk#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?u6qjcy');
+  src:  url('fonts/icomoon.eot?u6qjcy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?u6qjcy') format('truetype'),
+    url('fonts/icomoon.woff?u6qjcy') format('woff'),
+    url('fonts/icomoon.svg?u6qjcy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,3 +25,39 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cancel:before {
+  content: "\e90a";
+}
+.icon-menu:before {
+  content: "\e907";
+}
+.icon-search:before {
+  content: "\e920";
+}
+.icon-x:before {
+  content: "\e909";
+}
+.icon-keyboard_arrow_down:before {
+  content: "\e900";
+}
+.icon-keyboard_arrow_left:before {
+  content: "\e901";
+}
+.icon-keyboard_arrow_right:before {
+  content: "\e902";
+}
+.icon-keyboard_arrow_up:before {
+  content: "\e903";
+}
+.icon-shopping-bag:before {
+  content: "\e904";
+}
+.icon-user:before {
+  content: "\e905";
+}
+.icon-heart:before {
+  content: "\f004";
+}
+.icon-heart-o:before {
+  content: "\f08a";
+}
