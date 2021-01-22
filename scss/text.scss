@@ -9,6 +9,10 @@ p {
   font-size: 1rem;
   float: right;
   color: white;
+
+  @include range-width(0, 450px) {
+    float: inherit;
+  }
 }
 
 .sec_title {
@@ -51,6 +55,7 @@ p {
   font-weight: bolder;
   color: $blue;
   text-align: left;
+  padding: 85px 0;
 
   &:before {
     display: inline-block;
@@ -145,6 +150,12 @@ p {
   text-align: left;
 }
 
+
+
+.text14 {
+  display: inline-block;
+  font-size: 1.1rem;
+}
 
 
 

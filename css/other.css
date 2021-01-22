@@ -24,3 +24,5 @@
 .pro_style02 .pro02_img_five { display: inline-block; width: 100%; height: 220px; position: relative; }
 
 .pro_style03 .pro03_img { display: inline-block; width: 100%; height: 387px; }
+
+.cate_img { display: inline-block; width: 100%; max-width: 80px; background-color: #e6e4e2; -moz-border-radius: 60px; -webkit-border-radius: 60px; border-radius: 60px; overflow: hidden; }

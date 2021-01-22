@@ -81,5 +81,25 @@
   }
 }
 
+.cate_img {
+  display: inline-block;
+  width: 100%;
+  max-width: 80px;
+  background-color: rgba(230, 228, 226, 1.00);
+  @include border-radius(60px);
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
