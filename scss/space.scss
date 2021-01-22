@@ -3,22 +3,31 @@
 // index boxs space
 .pad_T50 {
   padding-top: 50px;
+
+  @include range-width(0, 450px) {
+    padding-top: 25px;
+  }
 }
 
 // product info boxs
 .pad_15 {
   padding: 15px 10px;
+
+  @include range-width(0, 450px) {
+    padding: 10px 8px;
+  }
 }
 
-// product otu space
+// product out space
 .mad_D30 {
   margin-bottom: 30px;
+
+  @include range-width(0, 450px) {
+    margin-bottom: 0;
+  }
 }
 
-// 
-.pad_D10 {
-  padding-bottom: 10px;
-}
+
 
 // cate
 .pad_T10 {
@@ -28,6 +37,24 @@
 // header
 .pad_TD20 {
   padding: 20px 0;
+
+  @include range-width(0, 450px) {
+    padding: 7px 0;
+  }
 }
 
+// 
+.pad_D10 {
+  padding-bottom: 10px;
+}
+
+.mag_TD25 {
+  margin: 25px 0;
+}
+
+.m_mag_D25 {
+  @include range-width(0, 450px) {
+    margin-bottom: 25px;
+  }
+}
 

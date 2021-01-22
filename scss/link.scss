@@ -55,12 +55,21 @@ button {
   right: 15px;
   z-index: 2222;
 
+  @include range-width(0, 450px) {
+    height: 18px;
+    right: 10px;
+  }
+
   &:after {
     display: inline-block;
     content: '\f08a';
     font-size: 1.2rem;
     font-family: 'icon';
     color: rgba(142, 142, 142, 1);
+
+    @include range-width(0, 450px) {
+      font-size: 1rem;
+    }
   }
 
   &:hover, &:active, &:focus {
@@ -94,6 +103,14 @@ button {
   color: $orange;
   @include transition(all .3s);
 
+  @include range-width(0, 450px) {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    top: 10px;
+    right: 10px;
+  }
+
   &:hover, &:active, &:focus {
     background-color: $orange;
     color: white;
@@ -114,6 +131,14 @@ button {
   font-size: 1.3rem;
   @include transition(all .3s);
 
+  @include range-width(0, 450px) {
+    width: 75%;
+    left: 11%;
+    bottom: 30px;
+    font-size: 1.2rem;
+    padding: 5px 0; 
+  }
+
   &:after {
     display: inline-block;
     content: attr(title);
@@ -121,6 +146,10 @@ button {
     font-size: 1rem;
     color: $grey_t;
     text-decoration: underline;
+
+    @include range-width(0, 450px) {
+      font-size: .9rem;
+    }
   }
 
   &:hover, &:active {
@@ -143,6 +172,11 @@ button {
   color: $grey_t;
   @include border-radius(30px);
   @include transition(all .3s);
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
   
   &:hover, &:active {
     border: 1px solid $blue;
@@ -161,6 +195,10 @@ button {
   color: $blue;
   @include border-radius(30px);
   @include transition(all .3s);
+
+  @include range-width(0, 450px) {
+    padding: 8px 20px;
+  }
   
   &:hover, &:active {
     border: 1px solid $blue;
