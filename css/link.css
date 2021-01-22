@@ -37,8 +37,12 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 @media screen and (max-width: 449px) and (min-width: 0) { .btn_more_blue { padding: 8px 20px; } }
 .btn_more_blue:hover, .btn_more_blue:active { border: 1px solid #0d2846; background-color: #0d2846; color: white; }
 
+.menu_mob { display: inline-block; width: calc(100% / 3); padding: 15px 0 13px 0; float: left; color: #8e8e8e; font-size: 1rem; border-bottom: 2px solid white; }
+.menu_mob:hover, .menu_mob:active, .menu_mob.menu_mob_ac { color: #0d2846; border-bottom: 2px solid #0d2846; }
+
 .menu_web { display: inline-block; font-size: 1.1rem; color: white; margin-right: 20px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .menu_web:hover, .menu_web:active { color: #fd472a; }
 
 .menu_icon { display: inline-block; font-size: 1.35rem; color: white; margin-left: 30px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+@media screen and (max-width: 449px) and (min-width: 0) { .menu_icon { margin-left: 15px; } }
 .menu_icon:hover, .menu_icon:active { color: #fd472a; }

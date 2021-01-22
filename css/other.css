@@ -10,10 +10,10 @@
 
 .text_right { text-align: right; }
 
-.mob_close { display: inline-block; }
+.mob_close { display: inline-block !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .mob_close { display: none !important; } }
 
-.mob_open { display: none; }
+.mob_open { display: none !important; }
 @media screen and (max-width: 449px) and (min-width: 0) { .mob_open { display: inline-block !important; } }
 
 .pro_style01, .pro_style02, .pro_style03 { display: inline-block; width: 100%; position: relative; }

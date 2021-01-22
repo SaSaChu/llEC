@@ -33,6 +33,183 @@ header {
   background-attachment: fixed;
 }
 
+#r_menu_boxs {
+
+  &.nav_open {
+    left: 0;
+  }
+
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  z-index: 8888;
+  background-color: white;
+  overflow: auto;
+  @include transition(left .3s, right .3s);
+  @include clearfix();
+  
+  text-align: left;
+  padding: 0; 
+  // border-right: 1px solid rgba(226, 226, 226, 1.00);
+
+  .r_menu_boxs {
+    display: inline-block;
+    width: calc(100% / 2);
+    float: left;
+    text-align: center;
+
+    .r_menu_like {
+      display: inline-block;
+      width: 100%;
+      border-bottom: 5px solid rgba(241, 241, 241, 1.00);
+      padding: 10px 0 5px 0;
+      color: $grey_t;
+      font-size: 1.23rem;
+
+      &:after {
+        display: inline-block;
+        content: attr(title);
+        font-size: .8rem;
+        width: 100%;
+      }
+
+      &:hover, &:active {
+        color: $blue;
+        border-bottom: 5px solid $blue;
+      }
+    }
+  }
+
+  > span {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    color: $grey_t;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition(all .3s);
+    border-bottom: 1px solid $grey_l;
+
+    &:after {
+      display: inline-block;
+      content: '\e902';
+      font-family: 'icon';
+      color: $grey_t;
+      font-size: 1.23rem;
+      float: right;
+    }
+
+    &:hover, &:active {
+      color: $grey_t;
+      // border-top: 1px solid $color_light_p;
+      border-bottom: 0; 
+      background-color: rgba(216, 216, 216, 1.00);
+    }
+  }
+
+  > a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    color: $grey_m;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition(all .3s);
+    // border-bottom: 1px solid $color_light_p;
+
+    &:hover, &:active {
+      background-color: yellow;
+    }
+
+    &.th {
+      padding-left: 40px;
+    }
+  }
+
+  > span, > a {
+    color: $grey_m;
+    font-size: 1rem;
+
+    &.db {
+      padding: 10px 15px;
+      border-bottom: 1px solid $grey_l;
+    }
+
+    &.db2 {
+      padding: 10px 15px 0 15px;
+    }
+  }
+
+  .ncu {
+    cursor: auto;
+    padding: 12px 15px;
+    @include clearfix();
+    border-top: 0;
+    margin: 0;
+    background-color: $blue;
+
+    .icon-x {
+      display: inline-block;
+      cursor: pointer;
+      width: 30px;
+      // height: 30px;
+      float: right;
+      font-size: 1.35rem;
+      // line-height: 40px;
+      text-decoration: none;
+      text-align: right;
+      color: white;
+    }
+  }
+
+  
+  .s {
+    border-bottom: 0;
+    background-color: rgba(216, 216, 216, 1.00);
+
+    &:after {
+      -moz-transform:rotate(90deg);
+      -webkit-transform:rotate(90deg);
+      -o-transform:rotate(90deg);
+      -ms-transform:rotate(90deg);
+      transform:rotate(90deg);
+      color: $grey_t;
+    }
+
+    + div {
+      display: block;
+    }
+  }
+
+  .m-smenu {
+    display: none;
+    border-bottom: 1px solid $grey_l;
+
+    > a {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 15px 10px 20px;
+      color: $grey_m;
+      text-decoration: none;
+      cursor: pointer;
+      @include transition(all .3s);
+      font-size: 1rem;
+      border-bottom: 2px dotted $grey_l;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      &:hover, &:active {
+        background-color: yellow;
+      }
+    }
+  }
+}
+
 footer {
   display: inline-block;
   width: 100%;
@@ -278,10 +455,18 @@ main {
 
 .top_left {
   float: left;
+
+  @include range-width(0, 450px) {
+    display: none;
+  }
 }
 
 .top_main {
   margin: 0 auto;
+
+  @include range-width(0, 450px) {
+    float: left;
+  }
 }
 
 .top_right {

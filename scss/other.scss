@@ -22,7 +22,7 @@
 }
 
 .mob_close {
-  display: inline-block;
+  display: inline-block !important;
 
   @include range-width(0, 450px) {
     display: none !important;
@@ -30,7 +30,7 @@
 }
 
 .mob_open {
-  display: none;
+  display: none !important;
 
   @include range-width(0, 450px) {
     display: inline-block !important;

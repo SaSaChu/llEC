@@ -12,7 +12,7 @@
 .pad_T10 { padding-top: 10px; }
 
 .pad_TD20 { padding: 20px 0; }
-@media screen and (max-width: 449px) and (min-width: 0) { .pad_TD20 { padding: 7px 0; } }
+@media screen and (max-width: 449px) and (min-width: 0) { .pad_TD20 { padding: 15px; } }
 
 .pad_D10 { padding-bottom: 10px; }
 
