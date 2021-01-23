@@ -103,6 +103,16 @@ button {
   color: $orange;
   @include transition(all .3s);
 
+  &.btn_trash {
+    color: $grey_m;
+    font-size: 1.2;
+
+    &:hover, &:active, &:focus {
+      background-color: $grey_m;
+      color: white;
+    }
+  }
+
   @include range-width(0, 450px) {
     width: 35px;
     height: 35px;
@@ -216,6 +226,19 @@ button {
   font-size: 1rem;
   border-bottom: 2px solid white;
 
+  &.menu_log_grey {
+    border-bottom: 2px solid $grey_l;
+  }
+
+  &.page_menu_grey {
+    background-color: rgba(245, 245, 245, 1.00);
+
+    &:hover, &:active, &.menu_mob_ac2 {
+      color: $blue_l;
+      border-bottom: 2px solid $blue_l;
+    }
+  }
+
   &:hover, &:active, &.menu_mob_ac {
     color: $blue;
     border-bottom: 2px solid $blue;
@@ -232,6 +255,15 @@ button {
     color: $orange;
   }
 }
+
+.page_type {
+  color: $grey_t !important;
+
+  &:hover, &:active {
+    color: $blue_l !important;
+  }
+}
+
 .menu_icon {
   display: inline-block;
   font-size: 1.35rem;
@@ -248,7 +280,37 @@ button {
   }
 }
 
+.link_bread {
+  display: inline-block;
+  color: $grey_m2;
+  font-size: 1rem;
+  float: left;
+  @include transition(all .3s);
 
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+  }
+
+  &:after {
+    display: inline-block;
+    content: '/';
+    margin: 4px 8px 0 8px;
+  }
+
+  &:hover, &:active {
+    color: $blue;
+
+    &:after {
+      color: $grey_m;
+    }
+  }
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+}
 
 
 

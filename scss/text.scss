@@ -184,14 +184,44 @@ p {
   }
 }
 
-
-
 .text14 {
   display: inline-block;
   font-size: 1.1rem;
+
+  &.text14_w {
+    color: white;
+  }
 }
 
+// big title(index use)
+.text23 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.8rem;
+  color: $blue;
+  font-weight: bolder;
+  padding-bottom: 50px;
 
+  @include range-width(0, 450px) {
+    padding: 25px 0;
+    font-size: 1.6rem;
+  }
+}
+
+.input_name {
+  display: inline-block;
+  font-size: 1rem;
+  color: black;
+  padding-bottom: 10px;
+  float: left;
+}
+
+.pro_name {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.4rem;
+  color: $blue_m;
+}
 
 
 

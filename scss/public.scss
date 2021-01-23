@@ -31,6 +31,11 @@ header {
   background-image: url(../img/header_bg.png);
   background-repeat: repeat-x;
   background-attachment: fixed;
+
+  &.page_white {
+    background-image: none;
+    background-color: white;
+  }
 }
 
 #r_menu_boxs {
@@ -260,12 +265,40 @@ footer {
 main {
   display: inline-block;
   width: 100%;
+  @include clearfix();
+
+  &.page_grey {
+    background-color: rgba(245, 245, 245, 1.00);
+  }
+}
+
+.min_boxs {
+  display: inline-block;
+  width: 100%;
+  margin: 0, auto;
+  @include clearfix();
+
+  &.mw_600 {
+    max-width: 600px;
+
+    @include range-width(0, 450px) {
+      padding: 0 15px;
+    }
+  }
+
+  &.mw_400 {
+    max-width: 400px;
+  }
 }
 
 .all_boxs {
   display: inline-block;
   width: 100%;
   @include clearfix();
+
+  &.poa {
+    position: relative;
+  }
 
   &.bg_grey, &.bg_blue, &.bg_white, &.bg_grey_l {
     padding: 50px 0;
@@ -301,6 +334,13 @@ main {
   @include range-width(0, 450px) {
     max-width: none;
   }
+
+  &.bg_line {
+    display: inline-block;
+    height: 13px;
+    background-image: url(../img/border.svg);
+    background-repeat: repeat-x;
+  }
 }
 
 #cate_boxs {
@@ -331,6 +371,16 @@ main {
   @include range-width(0, 450px) {
     width: 100%;
   }
+}
+
+.boxs50 {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  text-align: left;
+
+  //d
+  border: 1px solid rgba(255, 0, 0, .3);
 }
 
 .boxs_3, .boxs_4, .boxs_5 {
@@ -378,6 +428,10 @@ main {
 
   &:nth-child(4n+1) {
     margin-left: 0;
+  }
+
+  &:nth-child(n+5) {
+    margin-top: 30px;
   }
 
   @include range-width(0, 450px) {

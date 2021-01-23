@@ -1,6 +1,14 @@
 @import "Ginkgo";
 @import "color";
 
+input, textarea {
+  border:0 none;
+  outline: 0;
+  background-color: transparent;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari 和 Chrome */
+}
+
 .ds {
   display: inline-block;
 }
@@ -107,9 +115,46 @@
 }
 
 
+.page {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0 60px 0;
+
+  @include range-width(0, 450px) {
+    padding: 40px 0;
+  }
+
+  .arrow_box {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: $grey_m;
+    width: 30px;
+    height: 30px;
+    @include transition(all .3s);
+
+    &:hover, &:active {
+      color: $blue;
+      text-decoration: underline;
+    }
+  }
+}
 
 
 
+// input
+.input01 {
+  display: inline-block;
+  width: 100%;
+  @include border-radius(3px);
+  border: 1px solid $grey_m;
+  padding: 8px 10px;
+  font-size: 1.2rem;
+  color: $blue;
+
+  &::placeholder {
+    color: $grey_m2;
+  }
+}
 
 
 
