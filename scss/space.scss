@@ -1,4 +1,9 @@
 @import "Ginkgo";
+@import "color";
+@import "text";
+@import "space";
+@import "other";
+@import "link";
 
 // index boxs space
 .pad_T50 {
@@ -57,6 +62,10 @@
   margin: 25px 0;
 }
 
+.mag_T25 {
+  margin-top: 25px;
+}
+
 .m_mag_D25 {
   @include range-width(0, 450px) {
     margin-bottom: 25px;
@@ -71,9 +80,24 @@
   }
 }
 
+// 取消詳情用
+.m_L20 {
+  margin-left: 20px;
+}
+
+.pad_TD30 {
+  padding: 30px 0;
+}
+
 // product detail
 .pad_TD40 {
-  margin: 40px 0;
+  padding: 40px 0;
+}
+.pad_D20 {
+  padding-bottom: 20px;
+}
+.pad_T40 {
+  padding-top: 40px !important;
 }
 
 

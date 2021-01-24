@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+    <title>LockLine EC</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+    <script src="js/imgLiquid-min.js"></script>
+  </head>
+  <body>
+    
+    <header class='page_white'>
+      <div class='item_boxs pad_TD20'>
+        <div class='top_left'>
+          <a class='menu_web page_type' href="">最新消息</a>
+          <a class='menu_web page_type' href="">全部商品</a>
+          <a class='menu_web page_type' href="">商品分類</a>
+        </div>
+        <div class='top_main'><a href="index_v1.html"><img src="img/logo_black.svg"></a></div>
+        <div class='top_right'>
+          <a class='menu_icon page_type icon-heart-o mob_close' href=""></a>
+          <a class='menu_icon page_type icon-user mob_close' href=""></a>
+          <a class='menu_icon page_type icon-shopping-bag' href=""></a>
+          <div class='menu_icon page_type icon-menu mob_open'></div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- 手機選單 -->
+    <div id='r_menu_boxs'>
+      <span class='ncu'>
+        <a href="index_v1.html" class='order_left'><img src="img/logo.svg"></a>
+        <i class='icon-x'></i>
+      </span>
+
+      <div class='all_boxs'>
+        <div class='r_menu_boxs'>
+          <a class='r_menu_like icon-heart' href="" title='我的收藏'></a>
+        </div>
+        <div class='r_menu_boxs'>
+          <a class='r_menu_like icon-user' href="" title='我的帳戶'></a>
+        </div>
+      </div>
+
+      <span class="m-menu-t">眼彩</span>
+      <div class="m-smenu">
+        <a href="" >第二層選單</a>
+        <a href="" >第二層選單</a>
+      </div>
+
+      <span class="m-menu-t">眉彩</span>
+      <div class="m-smenu">
+        <a href="" >第二層選單</a>
+        <a href="" >第二層選單</a>
+      </div>
+
+      <span class="m-menu-t">唇彩</span>
+      <div class="m-smenu">
+        <a href="" >第二層選單</a>
+        <a href="" >第二層選單</a>
+      </div>
+
+      <span class="m-menu-t">頰彩</span>
+      <div class="m-smenu">
+        <a href="" >第二層選單</a>
+        <a href="" >第二層選單</a>
+      </div>
+
+      <span class="m-menu-t">唇彩</span>
+      <div class="m-smenu">
+        <a href="" >第二層選單</a>
+        <a href="" >第二層選單</a>
+      </div>
+
+      <span class="m-menu-t">頰彩</span>
+      <div class="m-smenu">
+        <a href="" >第二層選單</a>
+        <a href="" >第二層選單</a>
+      </div>
+
+      <a class='db2' href=''>分享官方帳號</a>
+      <a class='db2' href="">商店介紹/客服</a>
+      <a class='db2' href="">設定</a>
+    </div>
+
+
+    <div class='all_boxs mob_open'>
+      <a class='menu_mob page_menu_grey' href="">最新消息</a>
+      <a class='menu_mob page_menu_grey' href="">全部商品</a>
+      <a class='menu_mob page_menu_grey' href="">商品分類</a>
+    </div>
+    
+
+
+    <main class='page_grey'>
+      <!-- block01 -->
+      <div class='all_boxs bg_grey'>
+        <!-- 麵包屑 -->
+        <div class='item_boxs'>
+          <a class='link_bread' href="index.html">首頁</a>
+          <a class='link_bread' href="">我的帳戶</a>
+        </div>
+
+        <div class='item_boxs pad_TD40'>
+          <!-- 左邊選單 -->
+          <div class='boxs20'>
+            <div class='menu_left_boxs'>
+              <div class='link_menu_left'>購買清單</div>
+              <div class='link_menu_left'>我的紅利點數</div>
+              <div class='link_menu_left'>我的折價卷</div>
+            </div>
+          </div>
+
+          <!-- 右邊內容 -->
+          <div class='boxs80'>
+            <!-- 01. 購買清單 -->
+            <div class='accountbox accountbox_show'>
+              <div class='order_boxs'>
+                <div class='link_order_info'>全部</div>
+                <div class='link_order_info'>待付款</div>
+                <div class='link_order_info'>待出貨</div>
+                <div class='link_order_info'>待收貨</div>
+                <div class='link_order_info'>完成</div>
+                <div class='link_order_info'>取消</div>
+              </div>
+
+              <!-- 全部 -->
+              <div class='order_info order_info_show'>
+                <!-- 01 -->
+                <div class='all_boxs mag_TD25'>
+                  <div class='white_boxs'>
+                    <!-- 賣家 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='boxs50'>
+                        <a class='ac_stor_name' href="">aa06aaa2000</a>
+                      </div>
+                      <div class='boxs50'>
+                        <div class='pro_status'>
+                          <p class='status_text'>完成</p>
+                        </div>
+                        <div class='pro_status'>
+                          <p class='status_info'>寄送成功</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 商品一 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp' title='NT'>3,000</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 商品二 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_sale' title='NT'>2,000</p>
+                        <p class='pro_mp pro_mp_sale' title='NT'>500</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 總計 -->
+                    <div class='pro_info_box pad_T40'>
+                      <button class='btn_select ac_check'>查看訂單詳情</button>
+                      <div class='ac_total' title='訂單金額：'>NT1,410</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 02 -->
+                <div class='all_boxs mag_TD25'>
+                  <div class='white_boxs'>
+                    <!-- 賣家 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='boxs50'>
+                        <a class='ac_stor_name' href="">aa06aaa2000</a>
+                      </div>
+                      <div class='boxs50'>
+                        <div class='pro_status'>
+                          <p class='status_text'>完成</p>
+                        </div>
+                        <div class='pro_status'>
+                          <p class='status_info'>寄送成功</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 商品一 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp' title='NT'>3,000</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 商品二 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_sale' title='NT'>2,000</p>
+                        <p class='pro_mp pro_mp_sale' title='NT'>500</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 總計 -->
+                    <div class='pro_info_box pad_T40'>
+                      <button class='btn_select ac_check'>查看訂單詳情</button>
+                      <div class='ac_total' title='訂單金額：'>NT1,410</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 03 -->
+                <div class='all_boxs mag_TD25'>
+                  <div class='white_boxs'>
+                    <!-- 賣家 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='boxs50'>
+                        <a class='ac_stor_name' href="">aa06aaa2000</a>
+                      </div>
+                      <div class='boxs50'>
+                        <div class='pro_status'>
+                          <p class='status_text'>完成</p>
+                        </div>
+                        <div class='pro_status'>
+                          <p class='status_info'>寄送成功</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 商品一 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp' title='NT'>3,000</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 商品二 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_sale' title='NT'>2,000</p>
+                        <p class='pro_mp pro_mp_sale' title='NT'>500</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 總計 -->
+                    <div class='pro_info_box pad_T40'>
+                      <button class='btn_select ac_check'>查看訂單詳情</button>
+                      <div class='ac_total' title='訂單金額：'>NT1,410</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 04 -->
+                <div class='all_boxs mag_TD25'>
+                  <div class='white_boxs'>
+                    <!-- 賣家 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='boxs50'>
+                        <a class='ac_stor_name' href="">aa06aaa2000</a>
+                      </div>
+                      <div class='boxs50'>
+                        <div class='pro_status'>
+                          <p class='status_text'>完成</p>
+                        </div>
+                        <div class='pro_status'>
+                          <p class='status_info'>寄送成功</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 商品一 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp' title='NT'>3,000</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 商品二 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_sale' title='NT'>2,000</p>
+                        <p class='pro_mp pro_mp_sale' title='NT'>500</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 總計 -->
+                    <div class='pro_info_box pad_T40'>
+                      <button class='btn_select ac_check'>查看訂單詳情</button>
+                      <div class='ac_total' title='訂單金額：'>NT1,410</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 待付款 -->
+              <div class='order_info'>
+                <!-- 01 -->
+                <div class='all_boxs mag_TD25'>
+                  <div class='white_boxs'>
+                    <!-- 賣家 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='boxs50'>
+                        <a class='ac_stor_name' href="">aa06aaa2000</a>
+                      </div>
+                      <div class='boxs50'>
+                        <div class='pro_status'>
+                          <p class='status_text'>待付款</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 商品一 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp' title='NT'>3,000</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 商品二 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_sale' title='NT'>2,000</p>
+                        <p class='pro_mp pro_mp_sale' title='NT'>500</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 總計 -->
+                    <div class='pro_info_box pad_T40'>
+                      <button class='btn_select ac_check'>查看訂單詳情</button>
+                      <div class='ac_total' title='訂單金額：'>NT1,410</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 待出貨 -->
+              <div class='order_info'>
+                <!-- 01 -->
+                <div class='all_boxs mag_TD25'>
+                  <div class='white_boxs'>
+                    <!-- 賣家 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='boxs50'>
+                        <a class='ac_stor_name' href="">aa06aaa2000</a>
+                      </div>
+                      <div class='boxs50'>
+                        <div class='pro_status'>
+                          <p class='status_text'>待出貨</p>
+                        </div>
+                        <div class='pro_status'>
+                          <p class='status_info'>待賣家出貨</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 商品一 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp' title='NT'>3,000</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 商品二 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_sale' title='NT'>2,000</p>
+                        <p class='pro_mp pro_mp_sale' title='NT'>500</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 總計 -->
+                    <div class='pro_info_box pad_T40'>
+                      <button class='btn_select ac_check'>查看訂單詳情</button>
+                      <div class='ac_total' title='訂單金額：'>NT1,410</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 待收貨 -->
+              <div class='order_info'>
+                <!-- 01 -->
+                <div class='all_boxs mag_TD25'>
+                  <div class='white_boxs'>
+                    <!-- 賣家 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='boxs50'>
+                        <a class='ac_stor_name' href="">aa06aaa2000</a>
+                      </div>
+                      <div class='boxs50'>
+                        <div class='pro_status'>
+                          <p class='status_text'>待收貨</p>
+                        </div>
+                        <div class='pro_status'>
+                          <p class='status_info'>已送達</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 商品一 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp' title='NT'>3,000</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 商品二 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_sale' title='NT'>2,000</p>
+                        <p class='pro_mp pro_mp_sale' title='NT'>500</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 總計 -->
+                    <div class='pro_info_box pad_T40'>
+                      <button class='btn_select ac_check'>查看訂單詳情</button>
+                      <div class='ac_total' title='訂單金額：'>NT1,410</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 完成 -->
+              <div class='order_info'>
+                <!-- 01 -->
+                <div class='all_boxs mag_TD25'>
+                  <div class='white_boxs'>
+                    <!-- 賣家 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='boxs50'>
+                        <a class='ac_stor_name' href="">aa06aaa2000</a>
+                      </div>
+                      <div class='boxs50'>
+                        <div class='pro_status'>
+                          <p class='status_text'>完成</p>
+                        </div>
+                        <div class='pro_status'>
+                          <p class='status_info'>寄送成功</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 商品一 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp' title='NT'>3,000</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 商品二 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_sale' title='NT'>2,000</p>
+                        <p class='pro_mp pro_mp_sale' title='NT'>500</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 總計 -->
+                    <div class='pro_info_box pad_T40'>
+                      <button class='btn_select ac_check'>查看訂單詳情</button>
+                      <div class='ac_total' title='訂單金額：'>NT1,410</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 取消 -->
+              <div class='order_info'>
+                <!-- 01 -->
+                <div class='all_boxs mag_TD25'>
+                  <div class='white_boxs'>
+                    <!-- 賣家 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='boxs50'>
+                        <a class='ac_stor_name' href="">aa06aaa2000</a>
+                      </div>
+                      <div class='boxs50'>
+                        <div class='pro_status'>
+                          <p class='status_text'>取消</p>
+                        </div>
+                        <div class='pro_status'>
+                          <p class='status_info status_info_nomark'>已被你取消</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 商品一 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp' title='NT'>3,000</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 商品二 -->
+                    <div class='pro_info_box borderD_Sg'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format' title='規格：'>013濃醇奶茶露</p>
+                        <p class='pro_info_num' title='數量：'>1</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_sale' title='NT'>2,000</p>
+                        <p class='pro_mp pro_mp_sale' title='NT'>500</p>
+                        <p class='points nopath'>NT$800+200點</p>
+                      </div>
+                    </div>
+
+                    <!-- 總計 -->
+                    <div class='pro_info_box pad_T40'>
+                      <button class='btn_select ac_check'>再買一次</button>
+                      <button class='btn_select ac_check m_L20'>取消詳情</button>
+                      <div class='ac_total' title='訂單金額：'>NT1,410</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- 02. 我的紅利點數 -->
+            <div class='accountbox'>
+              <!-- 顯示所有點數 -->
+              <div class='all_boxs'>
+                <div class='white_boxs text_left'>
+                  <div class='ds'>
+                    <p class='text14'>您目前擁有得點數</p>
+                    <p class='points' title='即將到期的點數：'>200點 (2021/03/31)</p>
+                  </div>
+                  <div class='ac_total'>445.03</div>
+                </div>
+              </div>
+
+              <div class='order_boxs mag_T25'>
+                <div class='point_order_info'>所有紀錄</div>
+                <div class='point_order_info'>賺取</div>
+                <div class='point_order_info'>花費</div>
+              </div>
+
+              <!-- 所有紀錄 -->
+              <div class='order_point order_point_show'>
+                <div class='all_boxs'>
+                  <!-- 01 -->
+                  <div class='white_boxs ac_point_white'>
+                    <!-- 商品一 -->
+                    <div class='pro_info_box'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format'>購買完成</p>
+                        <p class='pro_info_num'>2021-01-16 22:03:29</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp pro_mp_sale'>+13</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class='white_boxs ac_point_white'>
+                    <!-- 商品一 -->
+                    <div class='pro_info_box'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format'>結帳時折抵</p>
+                        <p class='pro_info_num'>2021-01-16 22:03:29</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp'>-05</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class='white_boxs ac_point_white'>
+                    <!-- 商品一 -->
+                    <div class='pro_info_box'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format'></p>
+                        <p class='pro_info_num'>2021-01-16 22:03:29</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp'>-25</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 04 -->
+                  <div class='white_boxs ac_point_white'>
+                    <!-- 商品一 -->
+                    <div class='pro_info_box'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format'>購買完成</p>
+                        <p class='pro_info_num'>2021-01-16 22:03:29</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp pro_mp_sale'>+46</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 05 -->
+                  <div class='white_boxs ac_point_white'>
+                    <!-- 商品一 -->
+                    <div class='pro_info_box'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format'>購買完成</p>
+                        <p class='pro_info_num'>2021-01-16 22:03:29</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp pro_mp_sale'>+34</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 賺取 -->
+              <div class='order_point'>
+                <div class='all_boxs'>
+                  <!-- 01 -->
+                  <div class='white_boxs ac_point_white'>
+                    <!-- 商品一 -->
+                    <div class='pro_info_box'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format'>購買完成</p>
+                        <p class='pro_info_num'>2021-01-16 22:03:29</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp pro_mp_sale'>+34</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class='white_boxs ac_point_white'>
+                    <!-- 商品一 -->
+                    <div class='pro_info_box'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format'>購買完成</p>
+                        <p class='pro_info_num'>2021-01-16 22:03:29</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp pro_mp_sale'>+24</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class='white_boxs ac_point_white'>
+                    <!-- 商品一 -->
+                    <div class='pro_info_box'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format'>購買完成</p>
+                        <p class='pro_info_num'>2021-01-16 22:03:29</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp pro_mp_sale'>+45</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 花費 -->
+              <div class='order_point'>
+                <div class='all_boxs'>
+                  <!-- 01 -->
+                  <div class='white_boxs ac_point_white'>
+                    <!-- 商品一 -->
+                    <div class='pro_info_box'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format'>過期的點數</p>
+                        <p class='pro_info_num'>2021-01-16 22:03:29</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp'>-25</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 02 -->
+                  <div class='white_boxs ac_point_white'>
+                    <!-- 商品一 -->
+                    <div class='pro_info_box'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format'>結帳時折抵</p>
+                        <p class='pro_info_num'>2021-01-16 22:03:29</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp'>-56</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 03 -->
+                  <div class='white_boxs ac_point_white'>
+                    <!-- 商品一 -->
+                    <div class='pro_info_box'>
+                      <div class='pro_img'><img src="img/pic01.png"></div>
+                      <div class='pro_info'>
+                        <p class='pro_info_title'>M.A.C 子彈唇膏 3g 超霧感 / 閃亮星澤 / 絨光豐盈 / 水漾潤澤 / 霧幻性感唇膏 多色 小婷子美妝</p>
+                        <p class='pro_info_format'>結帳時折抵</p>
+                        <p class='pro_info_num'>2021-01-16 22:03:29</p>
+                      </div>
+                      <div class='pro_price'>
+                        <p class='pro_mp'>-15</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- 我的折價卷 -->
+            <div class='accountbox'>
+              <div class='order_boxs'>
+                <div class='cupon_order_info'>可使用</div>
+                <div class='cupon_order_info'>已使用</div>
+                <div class='cupon_order_info'>無效</div>
+              </div>
+
+              <!-- 可使用 -->
+              <div class='order_cupon order_cupon_show'>
+                <div class='white_boxs ac_cupon_white'>
+                  <div class='ticket_boxs ticket_used'>
+                    <div class='ticket_img icon-ticket'></div>
+                    <div class='ticket_info'>
+                      <p class='ticket_title'>優惠卷標題</p>
+                      <p class='ticket_main'>人道解多出時二國究喜……會毒展容安，懷標時等期好教，國來室藥錢斷了們只們說布從古機老樹部？</p>
+                      <div class='all_boxs'>
+                        <p class='ticket_date' title='有效日期：'>已過期</p>
+                        <!-- <a class='ticket_use'>已過</a> -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='ticket_boxs'>
+                    <div class='ticket_img icon-ticket'></div>
+                    <div class='ticket_info'>
+                      <p class='ticket_title'>優惠卷標題</p>
+                      <p class='ticket_main'>人道解多出時二國究喜……會毒展容安，懷標時等期好教，國來室藥錢斷了們只們說布從古機老樹部？</p>
+                      <div class='all_boxs'>
+                        <p class='ticket_date' title='有效日期：'>2021-02-28</p>
+                        <a class='ticket_use'>使用規則</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='ticket_boxs'>
+                    <div class='ticket_img icon-ticket'></div>
+                    <div class='ticket_info'>
+                      <p class='ticket_title'>優惠卷標題</p>
+                      <p class='ticket_main'>人道解多出時二國究喜……會毒展容安，懷標時等期好教，國來室藥錢斷了們只們說布從古機老樹部？</p>
+                      <div class='all_boxs'>
+                        <p class='ticket_date' title='有效日期：'>2021-02-28</p>
+                        <a class='ticket_use'>使用規則</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='ticket_boxs'>
+                    <div class='ticket_img icon-ticket'></div>
+                    <div class='ticket_info'>
+                      <p class='ticket_title'>優惠卷標題</p>
+                      <p class='ticket_main'>人道解多出時二國究喜……會毒展容安，懷標時等期好教，國來室藥錢斷了們只們說布從古機老樹部？</p>
+                      <div class='all_boxs'>
+                        <p class='ticket_date' title='有效日期：'>2021-02-28</p>
+                        <a class='ticket_use'>使用規則</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class='ticket_boxs'>
+                    <div class='ticket_img icon-ticket'></div>
+                    <div class='ticket_info'>
+                      <p class='ticket_title'>優惠卷標題</p>
+                      <p class='ticket_main'>人道解多出時二國究喜……會毒展容安，懷標時等期好教，國來室藥錢斷了們只們說布從古機老樹部？</p>
+                      <div class='all_boxs'>
+                        <p class='ticket_date' title='有效日期：'>2021-02-28</p>
+                        <a class='ticket_use'>使用規則</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 已使用 -->
+              <div class='order_cupon'>
+                <div class='white_boxs ac_cupon_white'>
+
+                </div>
+              </div>
+
+              <!-- 無效 -->
+              <div class='order_cupon'>
+                <div class='white_boxs ac_cupon_white'>
+                  <div class='ticket_boxs ticket_used'>
+                    <div class='ticket_img icon-ticket'></div>
+                    <div class='ticket_info'>
+                      <p class='ticket_title'>優惠卷標題</p>
+                      <p class='ticket_main'>人道解多出時二國究喜……會毒展容安，懷標時等期好教，國來室藥錢斷了們只們說布從古機老樹部？</p>
+                      <div class='all_boxs'>
+                        <p class='ticket_date' title='有效日期：'>已過期</p>
+                        <!-- <a class='ticket_use'>已過</a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <footer>
+      <div class='footer_boxs'>
+        <div class='f_nav_box'>
+          <a href='#' class='f_nav'>分享官方帳號</a>
+          <a href='#' class='f_nav'>商店介紹/客服</a>
+          <a href='#' class='f_nav'>聯絡我們</a>
+        </div>
+
+        <p class='f_copy'>©2020 coptright heme co. ltd All rights Reseved</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

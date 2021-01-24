@@ -1,4 +1,4 @@
-@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1611401904') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1611401904') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1611401904') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1611401904') format('svg'); }
+@font-face { font-family: "icon"; src: url('../font/icomoon/fonts/icomoon.eot?1611494954') format('embedded-opentype'), url('../font/icomoon/fonts/icomoon.woff?1611494954') format('woff'), url('../font/icomoon/fonts/icomoon.ttf?1611494954') format('truetype'), url('../font/icomoon/fonts/icomoon.svg?1611494954') format('svg'); }
 *[class^="icon-"]:before, *[class*=" icon-"]:before { font-family: "icon"; speak: none; font-style: normal; font-weight: normal; font-variant: normal; }
 
 .icon-cancel:before { content: "\e90a"; }
@@ -8,6 +8,12 @@
 .icon-search:before { content: "\e920"; }
 
 .icon-x:before { content: "\e909"; }
+
+.icon-ticket:before { content: "\e912"; }
+
+.icon-add:before { content: "\e90c"; }
+
+.icon-remove:before { content: "\e90d"; }
 
 .icon-keyboard_arrow_down:before { content: "\e900"; }
 
@@ -21,7 +27,13 @@
 
 .icon-last_page:before { content: "\e90b"; }
 
+.icon-credit_card:before { content: "\e90e"; }
+
+.icon-storefront:before { content: "\e90f"; }
+
 .icon-shopping-bag:before { content: "\e904"; }
+
+.icon-truck:before { content: "\e911"; }
 
 .icon-user:before { content: "\e905"; }
 
@@ -30,3 +42,5 @@
 .icon-heart:before { content: "\f004"; }
 
 .icon-heart-o:before { content: "\f08a"; }
+
+.icon-currency-dollar:before { content: "\e910"; }

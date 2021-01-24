@@ -1,4 +1,9 @@
 @import "Ginkgo";
+@import "color";
+@import "text";
+@import "space";
+@import "other";
+@import "link";
 
 p {
   margin: 0;
@@ -106,7 +111,7 @@ p {
   width: 100%;
   font-size: 1.5rem;
   font-weight: bolder;
-  color: red;
+  color: $red;
   text-align: left;
 
   @include range-width(0, 450px) {
@@ -172,6 +177,32 @@ p {
   }
 }
 
+.pro02_num_detail {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: $red;
+  text-align: left;
+  float: left;
+
+  @include range-width(0, 450px) {
+    font-size: 1.1rem;
+
+    &:before {
+      font-size: .9rem;
+    }
+  }
+
+  &:before {
+    display: block;
+    content: attr(title);
+    font-size: 1.2rem;
+    color: $grey_m;
+    margin-right: 5px;
+    text-decoration: line-through;
+  }
+}
+
 .points {
   display: inline-block;
   width: 100%;
@@ -182,31 +213,68 @@ p {
   @include range-width(0, 450px) {
     font-size: .9rem;
   }
-}
 
-.text14 {
-  display: inline-block;
-  font-size: 1.1rem;
+  &.nopath {
+    text-align: end;
+  }
 
-  &.text14_w {
-    color: white;
+  &:before {
+    display: inline-block;
+    content: attr(title);
   }
 }
 
-// big title(index use)
-.text23 {
+.points_detail {
   display: inline-block;
-  width: 100%;
-  font-size: 1.8rem;
-  color: $blue;
-  font-weight: bolder;
-  padding-bottom: 50px;
+  // width: 100%;
+  color: $blue_l;
+  font-size: 1rem;
+  text-align: left;
+  margin-left: 10px;
+  bottom: 0;
+  position: absolute;
 
   @include range-width(0, 450px) {
-    padding: 25px 0;
-    font-size: 1.6rem;
+    font-size: .9rem;
   }
 }
+
+.ticket_title {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2rem;
+  color: $blue;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.ticket_main {
+  width: 100%;
+  font-size: 1rem;
+  color: $grey_m;
+  display: -webkit-box;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  margin-bottom: 10px;
+}
+
+.ticket_date {
+  display: inline-block;
+  font-size: .9rem;
+  color: $grey_t;
+  line-height: 25px;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    margin-right: 5px;
+  }
+}
+
 
 .input_name {
   display: inline-block;
@@ -223,6 +291,165 @@ p {
   color: $blue_m;
 }
 
+.pro_tag {
+  display: inline-block;
+  width: 10%;
+  font-size: 1.1rem;
+  color: $grey_t;
+  float: left;
+}
+
+
+.text14 {
+  display: inline-block;
+  font-size: 1.1rem;
+
+  &.text14_w {
+    color: white;
+  }
+}
+
+
+.pro_info_title {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.1rem;
+  color: $blue;
+}
+
+.pro_info_format {
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  color: $grey_m2;
+  padding: 8px 0;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+  }
+}
+
+.pro_info_num {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.2rem;
+  color: $grey_m;
+  line-height: 20px;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    font-size: 1rem;
+  }
+}
+
+.pro_mp {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: $grey_t;
+  font-weight: bolder;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    margin-right: 10px;
+  }
+
+  &.pro_mp_sale {
+    color: $red;
+  }
+}
+
+.pro_sale {
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  color: $grey_m2;
+  text-decoration: line-through;
+  font-weight: bolder;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+.status_info {
+  display: inline-block;
+  font-family: 1.1rem;
+  color: $grey_m;
+
+  &:before {
+    display: inline-block;
+    content: '\e911';
+    font-family: 'icon';
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  &.status_info_nomark {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.status_text {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: $orange;
+}
+
+.ac_total {
+  display: inline-block;
+  float: right;
+  font-size: 2rem;
+  color: $red;
+  font-weight: bolder;
+
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: $grey_m;
+    padding-top: 11px;
+    font-weight: normal;
+  }
+}
+
+// produtc ingo
+.text18_b {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: $blue;
+  padding: 25px 0;
+}
+.text18_g {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: $grey_t;
+  line-height: 35px;
+}
+
+// big title(index use)
+.text23 {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.8rem;
+  color: $blue;
+  font-weight: bolder;
+  padding-bottom: 50px;
+
+  @include range-width(0, 450px) {
+    padding: 25px 0;
+    font-size: 1.6rem;
+  }
+}
 
 
 

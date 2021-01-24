@@ -1,5 +1,9 @@
 @import "Ginkgo";
 @import "color";
+@import "text";
+@import "space";
+@import "other";
+@import "link";
 
 input, textarea {
   border:0 none;
@@ -7,6 +11,19 @@ input, textarea {
   background-color: transparent;
   -moz-appearance: none; /* Firefox */
   -webkit-appearance: none; /* Safari 和 Chrome */
+}
+
+.border_Dg {
+  border-bottom: 1px solid $grey_m;
+}
+
+.borderD_Dl {
+  border-bottom: 1px dotted $blue_l;
+}
+
+// account boarder
+.borderD_Sg {
+  border-bottom: 1px solid rgba(229, 228, 229, 1.00);
 }
 
 .ds {
@@ -139,6 +156,122 @@ input, textarea {
   }
 }
 
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &:link {
+    text-decoration: none;
+  }
+}
+
+img {
+  vertical-align: middle;
+}
+
+// 購物車加減數量
+.btn-numbox {
+  overflow: hidden;
+  // margin-top: 20px;
+  padding: 0;
+  margin: 0;
+
+  ul {
+   padding: 0;
+
+    li {
+      float: left;
+
+      .number {
+        display: inline-block;
+        font-size: 12px;
+        color: #808080;
+        vertical-align: sub;
+      }
+    }
+  }
+}
+
+.btn-numbox .count {
+  overflow: hidden;
+  // margin: 0 16px 0 -20px;
+
+  .num-jian {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    color: $grey_m2;
+    cursor: pointer;
+    border: 1px solid $grey_l2;
+
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    &:hover, &:active, &:focus {
+      background-color: rgba(205, 213, 221, 1.00);
+      color: $blue_m;
+    } 
+  }
+}
+
+.input-num, .num-jia {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  color: $grey_m2;
+  cursor: pointer;
+  border: 1px solid $grey_l2;
+}
+
+.num-jia {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  color: $grey_m2;
+  cursor: pointer;
+  border: 1px solid $grey_l2;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  &:hover, &:active, &:focus {
+    background-color: rgba(205, 213, 221, 1.00);
+    color: $blue_m;
+  } 
+}
+
+.count .input-num {
+  width: 60px;
+  height: 45px;
+  color: $grey_t;
+  border-left: 0;
+  border-right: 0;
+  padding: 0 !important;
+}
 
 
 // input
@@ -156,6 +289,20 @@ input, textarea {
   }
 }
 
+.ship_select {
+  display: inline-block;
+  padding: 10px;
+  color: $grey_m;
+  border: 1px solid $grey_l2;
+  @include border-radius(4px);
+  background-color: transparent;
+  font-size: 1.1rem;
+  appearance:none;  
+  -moz-appearance:none;  
+  -webkit-appearance:none;
+  background: url("../img/arrow_d.svg") no-repeat scroll right center transparent;
+  padding-right: 42px;
+}
 
 
 

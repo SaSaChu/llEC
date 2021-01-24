@@ -1,5 +1,9 @@
 @import "Ginkgo";
 @import "color";
+@import "text";
+@import "space";
+@import "other";
+@import "link";
 
 a {
   display: inline-block;
@@ -312,11 +316,179 @@ button {
   }
 }
 
+.btn_select {
+  display: inline-block;
+  @include border-radius(4px);
+  border: 1px solid $grey_l2;
+  color: $grey_t;
+  font-size: 1.2rem;
+  padding: 10px 0;
+
+  &.ac_check {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+  }
+
+  &.btn_select3 {
+    width: calc(100% / 3 - 15px * 2 / 3);
+    float: left;
+
+    &:nth-child(3n+2) {
+      margin: 0 15px;
+    }
+
+    &:nth-child(n+4) {
+      margin-top: 15px;
+    }
+  }
+
+  &.btn_select2 {
+    width: calc(100% / 2 - 15px * 1 / 2);
+    float: left;
+    border: 1px solid $blue_m;
+    color: $blue_m;
+
+    &:first-child {
+      margin-right: 15px;
+    }
+  }
+
+  &:hover, &:active, &.on_select {
+    background-color: $blue_m;
+    border: 1px solid $blue_m;
+    color: white;
+  }
+
+}
+
+// account_left
+.link_menu_left {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  padding: 15px 0;
+  color: $grey_t;
+  font-size: 1.1rem;
+  border-bottom: 1px solid $grey_l2;
+  @include transition(all .3s);
+
+  &.lml_s {
+    color: white;
+    background-color: $blue_m;
+
+    &:hover, &:active {
+      color: white;
+    }
+  }
+
+  &:before {
+    display: inline-block;
+    content: '';
+    margin-left: 15px;
+  }
+
+  &:hover, &:active {
+    color: $blue_m;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
 
 
+.link_order_info {
+  display: inline-block;
+  width: calc(100% / 6);
+  font-size: 1.1rem;
+  color: $grey_t;
+  @include transition(all .3s);
+  border-bottom: 2px solid white;
+  padding: 15px 0;
+  float: left;
+
+  &.loi_s {
+    color:$blue_m;
+    border-bottom: 2px solid $blue_m;
+
+    &:hover, &:active {
+      color:$blue_m;
+    }
+  }
+
+  &:hover, &:active {
+    color:$blue_m;
+    border-bottom: 2px solid $blue_m;
+  }
+}
+
+.point_order_info, .cupon_order_info {
+  display: inline-block;
+  width: calc(100% / 3);
+  font-size: 1.1rem;
+  color: $grey_t;
+  @include transition(all .3s);
+  border-bottom: 2px solid rgba(229, 228, 229, 1.00);
+  padding: 15px 0;
+  float: left;
+
+  &.poi_s, &.coi_s {
+    color:$blue_m;
+    border-bottom: 2px solid $blue_m;
+
+    &:hover, &:active {
+      color:$blue_m;
+    }
+  }
+
+  &:hover, &:active {
+    color:$blue_m;
+    border-bottom: 2px solid $blue_m;
+  }
+}
 
 
+.ac_stor_name {
+  display: inline-block;
+  float: left;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: $blue;
+  padding-top: 5px;
+  @include transition(all .3s);
 
+  &:before {
+    display: inline-block;
+    content: '\e90f';
+    font-family: 'icon';
+    margin-right: 8px;
+    color: $blue_l;
+  }
+
+  &:hover, &:active {
+    color: $orange;
+
+    &:before {
+      color: $blue_l;
+    }
+  }
+}
+
+
+.ticket_use {
+  display: inline-block;
+  font-size: .9rem;
+  color: $blue_l;
+  float: right;
+
+  &:after {
+    display: inline-block;
+    content: '\e902';
+    font-family: 'icon';
+    line-height: 22px;
+    margin-left: 3px;
+  }
+} 
 
 
 
