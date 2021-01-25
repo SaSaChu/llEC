@@ -2,6 +2,10 @@
  
 $(function() {
 
+  $('input[type="checkbox"][tag]').click(function() {
+    $('input[type="checkbox"][parent~=' + $(this).attr('tag') + ']').prop('checked', $(this).is(':checked'))
+  })
+
   // account點選切換tab(左邊)
   $('.link_menu_left').click(function() {
     $('.link_menu_left').removeClass ('lml_s');

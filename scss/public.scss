@@ -22,6 +22,10 @@ body {
 
   text-size-adjust: none;
   -webkit-text-size-adjust:none;
+
+  &.page_grey {
+    background-color: rgba(245, 245, 245, 1.00);
+  }
 }
 
 
@@ -267,8 +271,8 @@ main {
   width: 100%;
   @include clearfix();
 
-  &.page_grey {
-    background-color: rgba(245, 245, 245, 1.00);
+  &.cart_md {
+    margin-bottom: 170px;
   }
 }
 
@@ -384,6 +388,16 @@ main {
   overflow: hidden;
 }
 
+// cart
+.cart_box {
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
 // account
 .accountbox, .order_info, .order_point, .order_cupon {
   display: inline-block;
@@ -405,6 +419,11 @@ main {
   overflow: hidden;
 }
 
+.resist_boxs {
+  display: inline-block;
+  float: right;
+}
+
 .white_boxs {
   display: inline-block;
   width: 100%;
@@ -413,6 +432,27 @@ main {
   @include box-shadow(0 1px 1px rgba(220, 219, 220, .5));
   overflow: hidden;
   padding: 15px;
+
+  &.cart_buy_box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include box-shadow(1px -8px 8px rgba(220, 219, 220, .3));
+
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
 
   &.ac_point_white {
     @include border-radius(0);
@@ -446,6 +486,15 @@ main {
   text-align: left;
   position: relative;
 
+  &.cart_bg {
+    background-color: rgba(249, 253, 255, 1.00);
+  }
+
+  &.no_text_left {
+    text-align: inherit;
+    padding: 20px 0;
+  }
+
   .pro_img {
     display: inline-block;
     float: left;
@@ -458,6 +507,10 @@ main {
     float: left;
     width: calc(100% - 105px - 150px);
     padding-left: 20px;
+
+    &.cart_pro_info {
+      width: calc(100% - 105px - 50px);
+    }
   }
 
   .pro_price {
@@ -519,10 +572,20 @@ main {
     height: 100%;
     float: left;
     background-color: $blue_m;
-    font-size: 3rem;
+    font-size: 1rem;
     color: white;
     text-align: center;
-    line-height: 150px;
+    padding-top: 35px;
+    // line-height: 150px;
+
+    &:before {
+      display: inline-block;
+      font-size: 3rem;
+      content: '\e912';
+      width: 100%;
+      font-family: 'icon';
+      margin-bottom: 5px;
+    }
   }
 
   .ticket_info {
@@ -533,9 +596,16 @@ main {
   }
 }
 
-.boxs20, .boxs80, .boxs50 {
+.boxs20, .boxs80, .boxs50, .boxs15, .boxs10 {
   display: inline-block;
   float: left;
+}
+
+.boxs10 {
+  width: 10%;
+}
+.boxs15 {
+  width: 15%;
 }
 
 .boxs20 {

@@ -282,11 +282,33 @@ button {
   &:hover, &:active {
     color: $orange;
   }
+
+  &[data-count] {
+    position: relative;
+    
+    &:after {
+      content: attr(data-count);
+      position: absolute;
+      right: -14px;
+      top: -10px;
+      display: inline-block;
+      padding: 2px 6px 2px 5px;
+      background-color: #ea473c;
+      color: white;
+      font-size: 10px;
+      display: inline-block;
+      height: 24px;
+      line-height: 20px;
+      @include border-radius(15px);
+      @include scale(.75);
+      text-align: center;
+    }
+  }
 }
 
 .link_bread {
   display: inline-block;
-  color: $grey_m2;
+  color: $grey_m;
   font-size: 1rem;
   float: left;
   @include transition(all .3s);
@@ -313,6 +335,21 @@ button {
     &:after {
       display: none;
     }
+  }
+}
+
+.btn_cart {
+  display: inline-block;
+  @include border-radius(4px);
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: $blue_m;
+  @include transition(all .3s);
+  float: right;
+
+  &:hover, &:active {
+    background-color: $orange;
   }
 }
 
@@ -454,7 +491,7 @@ button {
   font-size: 1.1rem;
   font-weight: bolder;
   color: $blue;
-  padding-top: 5px;
+  padding-top: 2px;
   @include transition(all .3s);
 
   &:before {
@@ -489,6 +526,39 @@ button {
     margin-left: 3px;
   }
 } 
+
+.link_text13 {
+  display: inline-block;
+  font-size: .9rem;
+  color: $grey_t;
+  @include transition(all .3s);
+  
+  &:hover, &:active {
+    color: $blue_l;
+  }
+}
+
+.cart_cupon {
+  display: inline-block;
+  float: right;
+  font-size: 1rem;
+  color: $blue_l;
+
+  &:hover, &:active {
+    color: $orange;
+  }
+
+  &:before {
+    display: inline-block;
+    content: '\e912';
+    font-family: 'icon';
+    padding: 4px 5px 0 0;
+  }
+}
+
+
+
+
 
 
 
