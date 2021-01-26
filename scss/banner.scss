@@ -6,6 +6,7 @@
   display: inline-block;
   width: 100%;
   margin-bottom: 140px;
+  overflow: hidden;
 
 
   &.full {
@@ -96,13 +97,19 @@
 
       &.right {
         left: auto;
-        right: 0;
+        right: 25px;
         width: 60px;
         height: 60px;
+
+        @include range-width(0, 475px) {
+          width: 50px;
+          height: 50px;
+          right: 0;
+        }
       }
 
       &:hover, &:active {
-        color: rgba(255, 74, 4, 1.00);
+        color: white;
       }
     }
   }
@@ -272,7 +279,7 @@
       &:hover, &:active {
         border: 1px solid rgba(255, 0, 0, 0);
         color: white;
-        background-color: $orange;
+        background-color: $blue;
       }
 
     }

@@ -186,7 +186,7 @@ p {
   float: left;
 
   @include range-width(0, 450px) {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 
     &:before {
       font-size: .9rem;
@@ -246,6 +246,10 @@ p {
   color: $blue;
   font-weight: bolder;
   padding-bottom: 10px;
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+  }
 }
 
 .ticket_main {
@@ -260,6 +264,11 @@ p {
   -webkit-box-orient: vertical;
   white-space: normal;
   margin-bottom: 10px;
+
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+    margin-bottom: 6px;
+  }
 }
 
 .ticket_date {
@@ -272,6 +281,10 @@ p {
     display: inline-block;
     content: attr(title);
     margin-right: 5px;
+  }
+
+  @include range-width(0, 450px) {
+    font-size: .8rem;
   }
 }
 
@@ -289,6 +302,11 @@ p {
   width: 100%;
   font-size: 1.4rem;
   color: $blue_m;
+
+  @include range-width(0, 450px) {
+    padding: 15px 0 0 0;
+    font-size: 1.2rem;
+  }
 }
 
 .pro_tag {
@@ -297,6 +315,11 @@ p {
   font-size: 1.1rem;
   color: $grey_t;
   float: left;
+
+  @include range-width(0, 450px) {
+    width: 100%;
+    padding-bottom: 15px;
+  }
 }
 
 
@@ -315,6 +338,10 @@ p {
   width: 100%;
   font-size: 1.1rem;
   color: $blue;
+
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+  }
 }
 
 .pro_info_format {
@@ -323,6 +350,10 @@ p {
   font-size: 1rem;
   color: $grey_m2;
   padding: 8px 0;
+
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+  }
 
   &:before {
     display: inline-block;
@@ -337,6 +368,10 @@ p {
   color: $grey_m;
   line-height: 20px;
 
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+  }
+
   &:before {
     display: inline-block;
     content: attr(title);
@@ -350,6 +385,12 @@ p {
   font-size: 1rem;
   color: $orange;
   line-height: 20px;
+
+  @include range-width(0, 450px) {
+    display: block;
+    float: left;
+    font-size: .9rem;
+  }
 
   &:before {
     display: inline-block;
@@ -383,6 +424,10 @@ p {
   text-decoration: line-through;
   font-weight: bolder;
 
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+  }
+
   &:before {
     display: inline-block;
     content: attr(title);
@@ -415,6 +460,10 @@ p {
   display: inline-block;
   font-size: 1.1rem;
   color: $orange;
+
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+  }
 }
 
 .ac_total {
@@ -423,6 +472,29 @@ p {
   font-size: 2rem;
   color: $red;
   font-weight: bolder;
+
+  &.ac_car {
+    @include range-width(0, 450px) {
+      &:before {
+        width: auto;
+        margin-right: 0  !important;
+        padding-top: 0  !important;
+        text-align: left;
+      }
+    }
+  }
+
+  @include range-width(0, 450px) {
+    font-size: 1.3rem;
+    text-align: right;
+
+    &:before {
+      width: 100%;
+      margin-right: 0  !important;
+      padding-top: 0  !important;
+      text-align: right;
+    }
+  }
 
   &.ac_t_left {
     float: left !important;
@@ -446,12 +518,21 @@ p {
   font-size: 1.3rem;
   color: $blue;
   padding: 25px 0;
+
+  @include range-width(0, 450px) {
+    padding: 0 0 20px 0;
+  }
 }
 .text18_g {
   display: inline-block;
   font-size: 1.3rem;
   color: $grey_t;
   line-height: 35px;
+
+  @include range-width(0, 450px) {
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
 }
 
 // big title(index use)

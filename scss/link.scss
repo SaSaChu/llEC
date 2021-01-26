@@ -348,6 +348,11 @@ button {
   @include transition(all .3s);
   float: right;
 
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
   &:hover, &:active {
     background-color: $orange;
   }
@@ -360,6 +365,10 @@ button {
   color: $grey_t;
   font-size: 1.2rem;
   padding: 10px 0;
+
+  @include range-width(0, 450px) {
+    font-size: 1rem;
+  }
 
   &.ac_check {
     padding: 10px 20px;
@@ -377,6 +386,15 @@ button {
     &:nth-child(n+4) {
       margin-top: 15px;
     }
+  }
+
+  &.m_btn_select3 {
+    display: inline-block;
+    width: auto;
+    font-size: .9rem;
+    text-align: left;
+    padding: 8px 10px;
+    margin: 0 10px 10px 0;
   }
 
   &.btn_select2 {
@@ -409,6 +427,19 @@ button {
   border-bottom: 1px solid $grey_l2;
   @include transition(all .3s);
 
+  @include range-width(0, 450px) {
+    width: calc(100% / 3);
+    font-size: 1rem;
+    float: left;
+    border-right: 1px solid $grey_l2;
+    padding: 10px 0;
+    border-bottom: 0;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
   &.lml_s {
     color: white;
     background-color: $blue_m;
@@ -422,6 +453,10 @@ button {
     display: inline-block;
     content: '';
     margin-left: 15px;
+
+    @include range-width(0, 450px) {
+      margin-left: 0;
+    }
   }
 
   &:hover, &:active {
@@ -443,6 +478,10 @@ button {
   border-bottom: 2px solid white;
   padding: 15px 0;
   float: left;
+
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+  }
 
   &.loi_s {
     color:$blue_m;
@@ -536,6 +575,11 @@ button {
   &:hover, &:active {
     color: $blue_l;
   }
+
+  &.cart_tru {
+    float: right;
+    padding-top: 3px;
+  }
 }
 
 .cart_cupon {
@@ -543,6 +587,10 @@ button {
   float: right;
   font-size: 1rem;
   color: $blue_l;
+
+  @include range-width(0, 450px) {
+    font-size: .9rem;
+  }
 
   &:hover, &:active {
     color: $orange;

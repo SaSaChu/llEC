@@ -1,6 +1,6 @@
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
-.banner { display: inline-block; width: 100%; margin-bottom: 140px; }
+.banner { display: inline-block; width: 100%; margin-bottom: 140px; overflow: hidden; }
 .banner.full { width: 100%; margin-bottom: 0; position: relative; }
 @media screen and (max-width: 659px) and (min-width: 0) { .banner.full { padding: 0; margin-top: 0; } }
 .banner.full .box { width: 100%; height: 650px; }
@@ -25,8 +25,9 @@
 @media screen and (max-width: 989px) and (min-width: 690px) { .banner.full .av { font-size: 4em; top: 45%; width: 60px; height: 60px; } }
 @media screen and (max-width: 689px) and (min-width: 475px) { .banner.full .av { font-size: 4em; top: 40%; width: 60px; height: 60px; } }
 @media screen and (max-width: 474px) and (min-width: 0) { .banner.full .av { font-size: 3em; top: 40%; width: 50px; height: 50px; } }
-.banner.full .av.right { left: auto; right: 0; width: 60px; height: 60px; }
-.banner.full .av:hover, .banner.full .av:active { color: #ff4a04; }
+.banner.full .av.right { left: auto; right: 25px; width: 60px; height: 60px; }
+@media screen and (max-width: 474px) and (min-width: 0) { .banner.full .av.right { width: 50px; height: 50px; right: 0; } }
+.banner.full .av:hover, .banner.full .av:active { color: white; }
 .banner.tran .box .item { -moz-transition: left 0.3s; -o-transition: left 0.3s; -webkit-transition: left 0.3s; transition: left 0.3s; }
 @media screen and (max-width: 659px) and (min-width: 325px) { .banner { padding: 0 10px; margin-bottom: 80px; margin-top: 20px; } }
 @media screen and (max-width: 324px) and (min-width: 0) { .banner { padding: 0 10px; margin-bottom: 50px; margin-top: 40px; } }
@@ -105,4 +106,4 @@
   .banner .box .item:nth-child(10) { left: 2480px; } }
 .banner .arrow_boxs { display: inline-block; width: 80px; height: 270px; padding: 0 20px; position: relative; }
 .banner .arrow_boxs .av { display: inline-block; width: 35px; height: 35px; position: absolute; top: 115px; left: 20px; border: 2px solid #0d2846; cursor: pointer; font-size: 1.6em; padding-top: 4px; background-color: white; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
-.banner .arrow_boxs .av:hover, .banner .arrow_boxs .av:active { border: 1px solid rgba(255, 0, 0, 0); color: white; background-color: #fd472a; }
+.banner .arrow_boxs .av:hover, .banner .arrow_boxs .av:active { border: 1px solid rgba(255, 0, 0, 0); color: white; background-color: #0d2846; }
