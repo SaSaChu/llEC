@@ -1,7 +1,7 @@
 $(function() {
 
   // 縮圖
-  $(".pro01_img, .pro02_img, .pro02_img_five, .pro03_img, .pro_img, .banner").imgLiquid ();
+  $(".pro01_img, .pro02_img, .pro02_img_five, .pro03_img, .pro_img, .banner .item").imgLiquid ();
 
   
   $('.banner').each (function () {

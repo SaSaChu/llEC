@@ -343,7 +343,22 @@ main {
   @include range-width(0, 450px) {
     width: 100%;
     overflow-x: scroll;
-    height: 115px;
+    height: 125px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    
+    .boxs_8 {
+      flex-shrink: 0;
+      width: 115px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
   }
 }
 

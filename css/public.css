@@ -424,7 +424,8 @@ main.cart_md { margin-bottom: 170px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .item_boxs { max-width: none; } }
 .item_boxs.bg_line { display: inline-block; height: 13px; background-image: url(../img/border.svg); background-repeat: repeat-x; }
 
-@media screen and (max-width: 449px) and (min-width: 0) { #cate_boxs { width: 100%; overflow-x: scroll; height: 115px; } }
+@media screen and (max-width: 449px) and (min-width: 0) { #cate_boxs { width: 100%; overflow-x: scroll; height: 125px; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: flex-start; }
+  #cate_boxs .boxs_8 { flex-shrink: 0; width: 115px; display: flex; flex-direction: column; flex-wrap: wrap; align-items: center; } }
 
 .block2_l, .block2_r { display: inline-block; float: left; }
 
