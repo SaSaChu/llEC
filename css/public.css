@@ -399,9 +399,6 @@ footer .footer_boxs .f_nav_box { display: inline-block; width: 50%; float: left;
 footer .footer_boxs .f_nav_box:after { display: table; content: ""; line-height: 0; clear: both; }
 @media screen and (max-width: 449px) and (min-width: 0) { footer .footer_boxs .f_nav_box { display: none; } }
 
-.banner_boxs { display: inline-block; width: 100%; height: 650px; background-color: rgba(255, 0, 0, 0.2); }
-@media screen and (max-width: 449px) and (min-width: 0) { .banner_boxs { height: 175px; } }
-
 main { display: inline-block; width: 100%; *zoom: 1; }
 main:after { display: table; content: ""; line-height: 0; clear: both; }
 main.cart_md { margin-bottom: 170px; }

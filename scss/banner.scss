@@ -1,0 +1,483 @@
+@import "Ginkgo";
+@import "color";
+@import "text";
+@import "space";
+@import "other";
+@import "link";
+
+
+.banner {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 140px;
+
+  &.greybg2 {
+    margin-bottom: 0;
+    padding-bottom: 100px;
+    background-color: rgba(246, 246, 246, 1.00);
+
+    @include range-width(325px, 660px) {
+      padding: 0 10px;
+      padding-bottom: 80px;
+      padding-top: 20px;
+      margin-top: 0;
+    }
+
+    @include range-width(0, 325px) {
+      padding: 0 10px;
+      padding-bottom: 50px;
+      padding-top: 40px;
+    }
+  }
+
+  &.full {
+    width: 100%;
+    margin-bottom: 0;
+
+    @include range-width(0, 660px) {
+      padding: 0 ;
+      margin-top: 0;
+    }
+
+    .box {
+      width: 100%;
+      height: 800px;
+
+      @include range-width(690px, 990px) {
+        height: 500px;
+      }
+
+      @include range-width(475px, 690px) {
+        height: 350px;
+      }
+
+      @include range-width(414px, 475px) {
+        height: 260px;
+      }
+
+      @include range-width(0, 414px) {
+        height: 215px;
+      }
+
+      .item {
+        width: 100%;
+        height: 100%;
+
+        .pic_full {
+          display: inline-block;
+          width: 100%;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        
+
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            left: calc(100% * #{$i - 2});
+          }
+        }
+      }
+    }
+
+    position: relative;
+
+    .av {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      font-size: 5em;
+      color: rgba(255, 255, 255, .3);
+      @include transition(all .3s);
+      
+      @include range-width(690px, 990px) {
+        font-size: 4em;
+        top: 45%;
+      }
+
+      @include range-width(475px, 690px) {
+        font-size: 4em;
+        top: 40%;
+      }
+
+      @include range-width(0, 475px) {
+        font-size: 4em;
+        top: 35%;
+      }
+
+      &.right {
+        left: auto;
+        right: 0;
+      }
+
+      &:hover, &:active {
+        color: rgba(255, 74, 4, 1.00);
+      }
+    }
+  }
+
+  &.product {
+
+    @include range-width(325px, 530px) {
+      position: relative;
+      
+      .arrow_boxs {
+        position: absolute;
+        z-index: 5;
+        left: -8px;
+        top: 15px;
+
+        &:last-child {
+          left: auto;
+          right: -5px;
+        }
+      }
+    }
+
+    @include range-width(0, 325px) {
+      position: relative;
+      
+      .arrow_boxs {
+        position: absolute;
+        z-index: 5;
+        left: -15px;
+        top: 15px;
+
+        &:last-child {
+          left: auto;
+          right: -20px;
+        }
+      }
+    }
+  }
+
+  &.tran .box .item {
+    @include transition(left .3s);
+  }
+
+  @include range-width(325px, 660px) {
+    padding: 0 10px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+  }
+
+  @include range-width(0, 325px) {
+    padding: 0 10px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+
+  .box {
+    display: inline-block;
+    width: 1200px;
+    margin: 0 auto;
+    height: 410px;
+    overflow: hidden;
+    position: relative;
+
+
+    @include range-width(1065px, 1355px) {
+      width: 875px;
+    }
+
+    @include range-width(860px, 1065px) { 
+      width: 675px;
+      height: 350px;
+    }
+
+    @include range-width(800px, 860px) {
+      width: 575px;
+      height: 350px;
+    }
+
+    @include range-width(660px, 800px) {
+      width: 475px;
+      height: 360px;
+    }
+
+    @include range-width(320px, 660px) {
+      width: 320px;
+      height: 450px;
+    }
+
+    @include range-width(0, 320px) {
+      width: 320px;
+      height: 400px;
+    }
+
+
+    .item {
+      width: 300px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding-right: 30px;
+
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+          left: 300px * ($i - 2);
+        }
+      }
+
+      @include range-width(860px, 1065px) {
+        width: 230px;
+        height: 320px;
+        padding-right: 20px;
+
+
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            left: 230px * ($i - 2);
+          }
+        }
+      }
+
+      @include range-width(800px, 860px) {
+        width: 195px;
+        height: 320px;
+        padding-right: 10px;
+
+
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            left: 195px * ($i - 2);
+          }
+        }
+      }
+
+      @include range-width(660px, 800px) {
+        width: 240px;
+        height: 360px;
+        padding-right: 10px;
+
+
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            left: 240px * ($i - 2);
+          }
+        }
+      }
+
+
+      @include range-width(375px, 660px) {
+        width: 320px;
+        height: 380px;
+        padding-right: 10px;
+
+
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            left: 320px * ($i - 2);
+          }
+        }
+      }
+
+
+      @include range-width(0, 325px) {
+        width: 310px;
+        height: 380px;
+        padding-right: 10px;
+
+
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            left: 310px * ($i - 2);
+          }
+        }
+      }
+
+
+
+      .p_picboxs {
+        display: inline-block;
+        width: 100%;
+        height: 270px;
+        padding: 20px;
+        border: 1px solid rgba(224, 224, 224, 1.00);
+        background-color: white;
+
+        @include range-width(860px, 1065px) {
+          height: 200px;
+        }
+
+        @include range-width(800px, 860px) {
+          height: 185px;
+        }
+
+        @include range-width(660px, 800px) {
+          height: 220px;
+        }
+
+        @include range-width(320px, 660px) {
+          height: 300px;
+        }
+
+        @include range-width(0, 320px) {
+          height: 280px;
+        }
+
+        a {
+          display: inline-block;
+          cursor: pointer;
+          width: 100%;
+          height: auto;
+
+          img {
+            width: 100%;
+            height: auto;
+
+            @include transition(all .3s);
+            
+            &:hover {
+              color: black;
+              opacity: 0.8;
+            }
+          }
+        }
+
+      }
+
+      .p_centboxs {
+        display: inline-block;
+        width: 100%;
+
+        @include range-width(800px, 860px) {
+          padding: 5px;
+        }
+
+        @include range-width(0, 800px) {
+          padding: 5px;
+        }
+
+        .p_name, .p_type, .p_price {
+          display: inline-block;
+          width: 100%;
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+        .p_name, .p_price {
+          padding: 15px 0;
+
+          @include range-width(0, 1065px) {
+            padding: 10px 0;
+          }
+
+        }
+
+        .p_name {
+          color: $blue;
+          font-size: 1.2em;
+          font-weight: 600;
+          white-space: pre-wrap;
+          height: 56px;
+          overflow: hidden;
+
+          @include transition(all .3s);
+          
+          &:hover, &:active {
+            color: $orange;
+          }
+
+          @include range-width(860px, 1065px) {
+            font-size: 1em;
+          }
+
+          @include range-width(800px, 860px) {
+            font-size: .9em;
+          }
+
+          @include range-width(0, 800px) {
+            font-size: 1em;
+          }
+
+
+        }
+
+        .p_type {
+          color: $grey_m;
+          font-size: .9em;
+          font-weight: thin;
+          height: 45px;
+          overflow: hidden;
+          text-align: center;
+
+          @include transition(all .3s);
+          
+          &:hover, &:active {
+            color: $orange;
+          }
+
+          @include range-width(800px, 860px) {
+            font-size: .8em;
+          }
+
+          @include range-width(0, 800px) {
+            font-size: .9em;
+          }
+        }
+
+        .p_price {
+          font-size: 1em;
+          color: $blue;
+          font-weight: 600;
+
+          &:before {
+            display: inline-block;
+            content: '$';
+            font-size: .4em;
+            margin-right: 3px;
+          }
+
+          @include range-width(0, 860px) {
+            font-size: .9em;
+          }
+        }
+      }
+    }
+  }
+
+
+  .arrow_boxs{
+    display: inline-block;
+    width: 80px;
+    height: 270px;
+    padding: 0 20px;
+    position: relative;
+
+    // @include range-width(0, 530px) {
+    //   display: none;
+    // }
+
+    .av {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 115px;
+      left: 20px;
+      border: 2px solid $blue;
+      cursor: pointer;
+      font-size: 1.6em;
+      padding-top: 4px; 
+      background-color: white;
+
+      @include border-radius(30px);
+      @include transition(all .3s);
+      
+      &:hover, &:active {
+        border: 1px solid rgba(255, 0, 0, 0);
+        color: white;
+        background-color: $orange;
+      }
+
+    }
+  }
+  
+}
