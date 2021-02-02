@@ -1,4 +1,3 @@
-@charset "UTF-8";
 *, *:after, *:before { vertical-align: top; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-osx-font-smoothing: subpixel-antialiased; -webkit-font-smoothing: subpixel-antialiased; -moz-font-smoothing: subpixel-antialiased; -ms-font-smoothing: subpixel-antialiased; -o-font-smoothing: subpixel-antialiased; }
 
 a { display: inline-block; cursor: pointer; text-decoration: none; outline: 0; }
@@ -223,11 +222,24 @@ img { vertical-align: middle; }
 #myModel { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(33, 33, 33, 0.8); }
 #myModel.showModel { display: inline-block; }
 #myModel .ac_outer { width: 100%; }
-#myModel .ac_outer .model_boxs { display: none; width: 100%; max-width: 780px; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; *zoom: 1; margin: 50px 0; }
+#myModel .ac_outer .model_boxs { display: none; width: 100%; max-width: 600px; background-color: white; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; *zoom: 1; margin: 50px 0; }
 #myModel .ac_outer .model_boxs.show { display: inline-block; }
 #myModel .ac_outer .model_boxs:after { display: table; content: ""; line-height: 0; clear: both; }
-@media screen and (max-width: 449px) and (min-width: 0) { #myModel .ac_outer .model_boxs { max-width: auto; margin: 0; height: 100%; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; } }
-#myModel .ac_outer .model_boxs .t-close { font-size: 2rem; font-weight: bold; cursor: pointer; color: #0d2846; float: right; }
+@media screen and (max-width: 449px) and (min-width: 0) { #myModel .ac_outer .model_boxs { max-width: auto; margin: 0; height: 100vh; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; } }
+#myModel .ac_outer .model_boxs .t-close { display: inline-block; padding: 10px 20px; font-size: 1rem; font-weight: bold; cursor: pointer; color: white; float: left; background-color: #0d2846; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; margin-top: 30px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+#myModel .ac_outer .model_boxs .t-close:hover, #myModel .ac_outer .model_boxs .t-close:active { background-color: #4a8fe1; }
+
+.lo_boxs { display: inline-block; width: 100%; padding: 20px; text-align: left; }
+
+.lo_type01 { display: inline-block; width: 100%; margin: 0 auto; color: #636363; font-size: .9rem; margin-bottom: 10px; }
+.lo_type01:before { display: inline-block; content: attr(title); width: 100%; font-weight: bolder; margin-bottom: 5px; }
+
+.cash_boxs { display: inline-block; width: 100%; }
+
+.lo_use { display: inline-block; padding: 10px 20px; font-size: 1rem; font-weight: bold; cursor: pointer; color: white; float: right; background-color: #0d2846; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; margin-top: 30px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.lo_use:hover, .lo_use:active { background-color: #4a8fe1; }
+
+.lo_title_boxs { display: inline-block; width: 100%; background-color: #4a8fe1; padding: 30px 0; font-size: 1.8rem; color: white; font-weight: bolder; }
 
 .pad_T50 { padding-top: 50px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pad_T50 { padding-top: 25px; } }
@@ -398,50 +410,8 @@ p { margin: 0; }
 .text16_b { display: inline-block; font-size: 1.1rem; color: #0d2846; padding-bottom: 15px; }
 
 .cart_money { display: inline-block; width: 100%; font-size: 1rem; color: #636363; padding-bottom: 15px; text-align: right; padding-right: 15px; }
-.cart_money.cart_m_r { color: #cc0010; font-size: 1.2rem; }
+.cart_money.cart_m_r { color: #cc0010; font-size: 1.3rem; font-weight: bolder; }
 .cart_money.cart_m_r:before { display: inline-block; content: attr(title); margin-right: 50px; margin-top: -3px; font-size: 1rem; color: #636363; }
 .cart_money:before { display: inline-block; content: attr(title); margin-right: 50px; margin-top: -3px; }
 
-* html body { behavior: url("csshover3.htc"); }
-
-/* ---------- 大小與定位 ---------- */
-#menu { /* 選單大小 */ width: 600px; height: 30px; }
-#menu ul { /* 取消ul樣式符號 */ list-style-type: none; /* 重設ul邊界與留白為零 */ margin: 0; padding: 0; /* 內有浮動元件時，需設overflow才會自動調整大小 */ overflow: auto; }
-
-* html #menu ul { /* 解決IE6不理overflow問題，直接指定高度 */ height: 30px; }
-
-#menu ul li { /* 利用float讓第一層li水平排列 */ float: left; }
-
-/* 解決IE6條列式餘白問題*/
-* html #menu ul li { display: inline; }
-
-#menu ul li a { /* 將a改為區塊元件，以便指定寬高 */ display: block; /* 這邊也要設float，否則IE6會以100%寬度顯示 */ float: left; /* 固定高度 */ height: 30px; width: 100px; text-align: center; }
-#menu ul li ul { /* 讓第二層ul跳脫文件流以利定位 */ position: absolute; /* 固定寬度 */ width: 100px; /* 避免出現捲軸 */ overflow: visible; /* 讓ul與母階層li相同位置 */ clear: left; margin-top: 30px; margin-right: 0; margin-bottom: 0; margin-left: 0; }
-
-/* 修正IE7絕對定位差異 */
-*:first-child + html #menu ul li ul, * html #menu ul li ul { margin-top: 0; }
-
-/* 修正IE6絕對定位差異 */
-#menu ul li ul li { /* 覆寫繼承自第一層的浮動設定 */ float: none; text-align: center; }
-#menu ul li ul li a { /* 覆寫繼承自第一層的浮動設定 */ float: none; width: 100%; /* 註：display、height、padding繼承第一層的設定 */ }
-#menu ul li ul li ul { margin-top: -30px; margin-right: 0; margin-bottom: 0; margin-left: 100px; width: 100%; }
-
-/* 修正IE7絕對定位差異 */
-*:first-child + html #menu ul li ul li ul { margin-top: -30px; }
-
-#menu { font-size: 12px; font-family: Arial, Helvetica, sans-serif; }
-#menu ul { background: #6f6f6f; }
-#menu ul li ul { /* 預先隱藏第二層 */ visibility: hidden; }
-#menu ul li ul li ul li { /* width、float繼承第二層，免設定 */ }
-#menu ul li ul li ul li a { /* width、float繼承第二層，免設定 */ }
-#menu ul li:hover ul { /* 觸動第一層時，顯示第二層 */ visibility: visible; }
-#menu ul li:hover ul li ul { /* 顯示第二層時，隱藏第三層，避免同時彈出 */ visibility: hidden; }
-#menu ul li ul li:hover ul { /* 觸動第二層時，顯示第三層 */ visibility: visible; }
-#menu ul li ul li:hover ul li ul { /* 顯示第三層時，隱藏第四層，避免同時彈出 */ visibility: hidden; }
-#menu ul li ul li ul li:hover ul { /* 觸動第三層時，顯示第四層 */ visibility: visible; }
-#menu ul li a { color: #FFF; text-decoration: none; line-height: 30px; }
-#menu ul li ul { background: #efefef; }
-#menu ul li ul li a { font-size: 12px; color: #333333; text-decoration: none; }
-#menu ul li:hover, #menu ul li a:hover { background: #efefef; }
-#menu ul li:hover a { color: #333333; }
-#menu ul li ul li:hover, #menu ul li ul li a:hover { background: #dfdfdf; }
+.test_boxs { display: inline-block; width: 100%; max-width: 600px; padding: 20px; border: 1px solid rgba(255, 0, 0, 0.3); }
