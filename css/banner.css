@@ -28,6 +28,12 @@
 .banner.full .av.right { left: auto; right: 25px; width: 60px; height: 60px; }
 @media screen and (max-width: 474px) and (min-width: 0) { .banner.full .av.right { width: 50px; height: 50px; right: 0; } }
 .banner.full .av:hover, .banner.full .av:active { color: white; }
+@media screen and (max-width: 529px) and (min-width: 325px) { .banner.product { position: relative; }
+  .banner.product .arrow_boxs { position: absolute; z-index: 5; left: -8px; top: 15px; }
+  .banner.product .arrow_boxs:last-child { left: auto; right: -5px; } }
+@media screen and (max-width: 324px) and (min-width: 0) { .banner.product { position: relative; }
+  .banner.product .arrow_boxs { position: absolute; z-index: 5; left: -15px; top: 15px; }
+  .banner.product .arrow_boxs:last-child { left: auto; right: -20px; } }
 .banner.tran .box .item { -moz-transition: left 0.3s; -o-transition: left 0.3s; -webkit-transition: left 0.3s; transition: left 0.3s; }
 @media screen and (max-width: 659px) and (min-width: 325px) { .banner { padding: 0 10px; margin-bottom: 80px; margin-top: 20px; } }
 @media screen and (max-width: 324px) and (min-width: 0) { .banner { padding: 0 10px; margin-bottom: 50px; margin-top: 40px; } }

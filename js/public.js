@@ -1,7 +1,20 @@
 $(function() {
 
   // 縮圖
-  $(".pro01_img, .pro02_img, .pro02_img_five, .pro03_img, .pro_img, .banner .item").imgLiquid ();
+  $(".pro01_img, .pro02_img, .pro02_img_five, .pro03_img, .pro_img, .banner .item, .banner .item2").imgLiquid ();
+
+
+  // 光箱
+  $('.showModel').click(function() {
+    $('#myModel').addClass('showModel')
+
+    $('#myModel .model_boxs.box_' + $(this).data('id')).addClass('show').siblings().removeClass('show')
+  })
+
+  $('.btn_close, .t-close').click(function() {
+    $('#myModel').removeClass('showModel')
+  })
+
 
   
   $('.banner').each (function () {

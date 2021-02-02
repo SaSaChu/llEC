@@ -114,6 +114,42 @@
     }
   }
 
+  &.product {
+
+    @include range-width(325px, 530px) {
+      position: relative;
+      
+      .arrow_boxs {
+        position: absolute;
+        z-index: 5;
+        left: -8px;
+        top: 15px;
+
+        &:last-child {
+          left: auto;
+          right: -5px;
+        }
+      }
+    }
+
+    @include range-width(0, 325px) {
+      position: relative;
+      
+      .arrow_boxs {
+        position: absolute;
+        z-index: 5;
+        left: -15px;
+        top: 15px;
+
+        &:last-child {
+          left: auto;
+          right: -20px;
+        }
+      }
+    }
+  }
+
+
   &.tran .box .item {
     @include transition(left .3s);
   }

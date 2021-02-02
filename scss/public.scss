@@ -4,6 +4,7 @@
 @import "space";
 @import "other";
 @import "link";
+@import "other";
 
 body {
   position: relative;
@@ -119,7 +120,7 @@ header {
     }
   }
 
-  > a {
+  > span, > a, > div > a, > div > div > a, > div > span {
     display: inline-block;
     width: 100%;
     padding: 10px 15px;
@@ -127,10 +128,22 @@ header {
     text-decoration: none;
     cursor: pointer;
     @include transition(all .3s);
-    // border-bottom: 1px solid $color_light_p;
+    @include transition(all .3s);
+    border-bottom: 1px solid rgba(226, 226, 226, 1.00);
 
     &:hover, &:active {
-      background-color: yellow;
+      color: $blue;
+      border-left: 2px solid $blue;
+    }
+
+    &.s_menublue {
+      color: $blue;
+      border-left: 2px solid $blue;
+    }
+
+    &.s_menuorange {
+      color: $orange;
+      border-left: 2px solid $orange;
     }
 
     &.th {
@@ -218,6 +231,177 @@ header {
     }
   }
 }
+
+
+// #r_menu_boxs {
+
+//   &.nav_open {
+//     display: inline-block;
+//   }
+
+//   display: none;
+//   position: fixed;
+//   width: 250px;
+//   height: 100%;
+//   left: 0;
+//   top: 0;
+//   z-index: 999999;
+//   background-color: white;
+//   overflow: auto;
+//   @include transition(opacity .3s, left .3s);
+//   text-align: left;
+//   padding: 0; 
+//   border-right: 1px solid rgba(226, 226, 226, 1.00);
+
+//   &.s_menu {
+//     left: 0;  
+//   }
+
+//   > span, > a, > div > a, > div > div > a, > div > span {
+//     display: inline-block;
+//     width: 100%;
+//     line-height: 30px;
+//     padding:10px 20px;
+//     color: white;
+//     text-decoration: none;
+//     cursor: pointer;
+//     @include transition(all .3s);
+//     border-bottom: 1px solid rgba(226, 226, 226, 1.00);
+
+//     &:hover, &:active {
+//       color: $blue;
+//       border-left: 2px solid $blue;
+//     }
+
+//     &.s_menublue {
+//       color: $blue;
+//       border-left: 2px solid $blue;
+//     }
+
+//     &.s_menuorange {
+//       color: $orange;
+//       border-left: 2px solid $orange;
+//     }
+
+//     &.th {
+//       padding-left: 40px;
+//     }
+//   }
+
+//   > span, > a {
+//     font-size: 1.2rem;
+//     color: $grey_t;
+
+//      &.db {
+//       border-bottom: 1px solid rgba(226, 226, 226, 1.00);
+
+//       &:hover, &:active {
+//         color: $Dellblue;
+//         border-left: 2px solid $blue;
+//       }
+//     }
+
+//     b {
+//       display: inline-block;
+//       float: left;
+//       width: 30px;
+//       height: 30px;
+//       // background-color: rgba(81, 193, 238, 1.00);
+//       border: 1px solid rgba(81, 193, 238, 1.00);
+//       @include border-radius(15px);
+//       overflow: hidden;
+//       margin-right: 5px;
+      
+//       .navicon {
+//         display: inline-block;
+//         width: 28px;
+//         height: 28px;
+//         background-color: rgba(65, 184, 238, 1.00);
+//         // margin: 3px;
+
+//         .img {
+//           width: 100%;
+//           max-width: 25px;
+//         }
+//       }
+//     }
+//   }
+
+//   > div > a, > div > div > a, > div > span {
+//     font-size: 1rem;
+//     @include transition(all .3s);
+//     border-bottom: 1px solid rgba(226, 226, 226, 1.00);
+//     color: $grey_t;
+
+//     &:hover, &:active {
+//       color: $Dellblue;
+//       border-left: 2px solid $blue;
+//     }
+//   }
+//   > span, > div > span {
+//     color: $gray;
+
+//     &:after {
+//       display: inline-block;
+//       content: '\e902';
+//       font-family: 'icomoon';
+//       font-size: 22px;
+//       float: right;
+//     }
+
+//     &:first-child {
+//       &:after {
+//         display: none;
+//       }
+//     }
+//   }
+//   > div, > div > div {
+//     display: none;
+//   }
+
+//   > span, > div > span {
+
+//     &.ncu {
+//       cursor: auto;
+//       border-bottom: 1px solid rgba(226, 226, 226, 1.00);
+//       padding: 10px 20px;
+//       @include clearfix();
+
+//       .icon-close {
+//         display: inline-block;
+//         cursor: pointer;
+//         width: 30px;
+//         height: 30px;
+//         float: right;
+//         font-size: 1.3rem;
+//         line-height: 30px;
+//         text-decoration: none;
+//         text-align: right;
+//         color: $grey_t;
+//       }
+//     }
+   
+//     &.s {
+//       &:after {
+//         -moz-transform:rotate(180deg);
+//         -webkit-transform:rotate(180deg);
+//         -o-transform:rotate(180deg);
+//         -ms-transform:rotate(180deg);
+//         transform:rotate(180deg);
+//       }
+
+//       + div {
+//         display: block;
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+
 
 footer {
   display: inline-block;
