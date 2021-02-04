@@ -126,29 +126,49 @@ $(function() {
     // scrollUnlock();
   });
 
+  $('.new_products').each(function() {
+    let $that = $(this)
+    let $left = $that.find('.left')
+    let $right = $that.find('.right')
+    let $product = $that.find('.product')
+    let total = $product.length
+    $left.click(_ => {
+      let i = parseInt($that.attr('data-i'), 10);
+      $that.attr('data-i', i == 1 ? total : --i)
+    })
+    $right.click(_ => {
+      let i = parseInt($that.attr('data-i'), 10);
+      $that.attr('data-i', i == total ? 1 : ++i)
+    })
+    let $dots = $(Array.apply(null, Array(total)).map(_ => $('<label />').addClass('dot').click(function() {
+      $that.attr('data-i', $dots.index($(this)) + 1)
+    }))).map($.fn.toArray).appendTo($that.find('.dots'))
+
+  })
 
 
 
-  // 購物車加減數量
-  var num_jia = document.getElementById("num-jia");
-    var num_jian = document.getElementById("num-jian");
-    var input_num = document.getElementById("input-num");
 
-    num_jia.onclick = function() {
+  // // 購物車加減數量
+  // var num_jia = document.getElementById("num-jia");
+  //   var num_jian = document.getElementById("num-jian");
+  //   var input_num = document.getElementById("input-num");
 
-      input_num.value = parseInt(input_num.value) + 1;
-    }
+  //   num_jia.onclick = function() {
 
-    num_jian.onclick = function() {
+  //     input_num.value = parseInt(input_num.value) + 1;
+  //   }
 
-      if(input_num.value <= 0) {
-        input_num.value = 0;
-      } else {
+  //   num_jian.onclick = function() {
 
-        input_num.value = parseInt(input_num.value) - 1;
-      }
+  //     if(input_num.value <= 0) {
+  //       input_num.value = 0;
+  //     } else {
 
-    }
+  //       input_num.value = parseInt(input_num.value) - 1;
+  //     }
+
+  //   }
     
     /* 如果在和后台做数据交互时，出现点击加减按钮的值无法传到后台的情况，可以用下面这种方式
     $("body").on("click", ".num-jian", function(m) {
