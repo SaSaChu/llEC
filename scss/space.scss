@@ -72,6 +72,12 @@
   }
 }
 
+.m_mag_T20 {
+  @include range-width(0, 450px) {
+    margin-top: 20px;
+  }
+}
+
 .mag_TD80 {
   margin: 80px 0;
 

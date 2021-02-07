@@ -36,6 +36,10 @@ input, textarea {
   display: inline-block;
 }
 
+.lh30 {
+  line-height: 30px;
+}
+
 .order_left {
   float: left !important;
 }
@@ -497,12 +501,13 @@ img {
       @include border-radius(4px);
       @include clearfix();
       margin: 50px 0;
+      padding: 20px 15px;
 
       @include range-width(0, 450px) {
-          max-width: auto;
-          margin: 0;
-          height: 100vh;
-          @include border-radius(0);
+        max-width: auto;
+        margin: 0;
+        // height: 100vh;
+        @include border-radius(0);
       }
 
       .t-close {
@@ -517,6 +522,15 @@ img {
         @include border-radius(4px);
         margin-top: 30px;
         @include transition(all .3s);
+
+        &.m_t_close {
+          display: none;
+          @include range-width(0, 450px) {
+            display: inline-block;
+            float: right;
+            margin-top: 0;
+          }
+        }
 
         &:hover, &:active {
           background-color: $blue_l;
@@ -585,11 +599,44 @@ img {
 }
 
 
+.radio_boxs {
+  display: inline-block;
+  font-size: 1rem;
+  color: $grey_m;
+  margin-top: 7px;
+}
 
 
+.input_boxs {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+  text-align: left;
 
+  &.in_boxs2 {
+    display: inline-block;
+    width: calc(50% - 20px * 1 / 2);
+    margin-right: 20px;
 
+    @include range-width(0, 450px) {
+      margin-right: 0;
+      width: 100%;
+    }
 
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+}
+
+.send_in_t {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid $grey_m;
+  padding: 10px;
+  margin-top: 8px;
+}
 
 
 

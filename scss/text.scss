@@ -603,7 +603,28 @@ p {
   text-align: right;
   padding-right: 15px;
 
+  &.cart_m_list {
+    &:before {
+      margin-right: 6px;
+    }
+  }
+
   &.cart_m_r {
+    color: $red;
+    font-size: 1.3rem;
+    font-weight: bolder;
+
+    &:before {
+      display: inline-block;
+      content: attr(title);
+      margin-right: 12px;
+      margin-top: -3px;
+      font-size: 1rem;
+      color: $grey_t;
+    }
+  }
+
+  &.cart_m_r02 {
     color: $red;
     font-size: 1.3rem;
     font-weight: bolder;
@@ -626,10 +647,45 @@ p {
   }
 }
 
+.cart_add {
+  display: inline-block;
+  margin-right: 15px;
+  color: $grey_m;
+  font-size: 1rem;
 
+  &.add_red {
+    float: right;
+    color: $red;
+  }
 
+  &:before {
+    display: inline-block;
+    content: attr(title);
+    margin-right: 15px;
+    color: $blue;
+  }
+}
 
+.send_title {
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  color: $blue;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(229, 228, 229, 1.00);
+  text-align: left;
+}
 
+.send_add {
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  color: $grey_t;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  text-align: left;
+}
 
 
 

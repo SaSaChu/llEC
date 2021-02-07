@@ -144,9 +144,9 @@
                 <div class='boxs15 mob_close'><p class='text13'>$680</p></div>
                 <div class='boxs15 mob_close'><p class='text13'>1</p></div>
                 <div class='boxs20 mob_close'><p class='text13'>$680</p></div>
-                <div class='boxs15 m_boxs15'>
+                <div class='boxs15 m_boxs15 mob_open'>
                   <p class='text13 order_left'>x 1</p>
-                  <p class='text13 order_right'>$680</p>
+                  <p class='text13 order_right '>$680</p>
                 </div>
               </div>
 
@@ -163,7 +163,7 @@
                 <div class='boxs15 mob_close'><p class='text13'>$680</p></div>
                 <div class='boxs15 mob_close'><p class='text13'>1</p></div>
                 <div class='boxs20 mob_close'><p class='text13'>$680</p></div>
-                <div class='boxs15 m_boxs15'>
+                <div class='boxs15 m_boxs15 mob_open'>
                   <p class='text13 order_left'>x 1</p>
                   <p class='text13 order_right'>$680</p>
                 </div>
@@ -175,23 +175,22 @@
                   <p class='text16_b'>請選擇交易方式</p>
                   <div class='all_boxs'>
                     <input class='radio_boxs' type="radio" name="layout" id="c1">
-                    <label for="c1">NT2,500</label>
+                    <label for="c1" class='lh30'>NT2,500</label>
                   </div>
                   <div class='all_boxs'>
                     <input class='radio_boxs' type="radio" name="layout" id="c2">
-                    <label for="c2">NT1,500 + 使用購物金 100 </label>
+                    <label for="c2" class='lh30'>NT1,500 + 使用購物金 100 </label>
                   </div>
                 </div>
-                <div class='boxs50 pad_LR15'>
+                <div class='boxs50 pad_LR15 m_mag_T20'>
                   <div class='all_boxs'>
                     <p class='text16_b'>寄送方式</p>
-                    <a class='ticket_use' href="">變更</a>
+                    <div class='ticket_use showModel' data-id='1' href="">變更</div>
                   </div>
 
                   <div class='all_boxs'>
-                    <p>郵寄</p>
-                    <p>新北市板橋區建國街22號1樓</p>
-                    <p>80元</p>
+                    <p class='cart_add' title='郵寄：'>新北市板橋區建國街22號1樓</p>
+                    <p class='cart_add add_red'>80元</p>
                   </div>
                 </div>
               </div>
@@ -232,6 +231,45 @@
       </div>
     </main>
 
+    <div id="myModel" class="model">
+      <div class='ac_outer'>
+        <div class='model_boxs box_1'>
+          <p class='send_title'>寄送方式</p>
+          <p class='send_add'>收件地址</p>
+
+          <div class='all_boxs borderD_Dg'>
+            <div class='input_boxs in_boxs2'>
+              <p>姓名</p>
+              <input class='send_in_t' type="text" placeholder="請輸入收件人姓名" >
+            </div>
+            <div class='input_boxs in_boxs2'>
+              <p>電話</p>
+              <input class='send_in_t' type="text" placeholder="請輸入收件人聯絡電話" >
+            </div>
+            <div class='input_boxs'>
+              <p>地址</p>
+              <input class='send_in_t' type="text" placeholder="請輸入收件人地址" >
+            </div>
+          </div>
+
+          <div class='all_boxs borderD_Sg'>
+            <div class='all_boxs'>
+              <input class='radio_boxs order_left' type="radio" name="layout" id="c1">
+              <label for="c1" class='lh30 order_left'>宅配</label>
+              <p class='cart_add add_red'>80元</p>
+            </div>
+            <div class='all_boxs'>
+              <input class='radio_boxs order_left' type="radio" name="layout" id="c2">
+              <label for="c2" class='lh30 order_left'>中華郵政</label>
+              <p class='cart_add add_red'>80元</p>
+            </div>
+          </div>
+          
+          <div class='t-close'>取消</div>
+          <div class='t-close order_right'>完成</div>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <div class='footer_boxs'>
