@@ -33,9 +33,12 @@ body {
 header {
   display: inline-block;
   width: 100%;
-  background-image: url(../img/header_bg.png);
-  background-repeat: repeat-x;
-  background-attachment: fixed;
+
+  &.page_blue {
+    background-image: url(../img/header_bg.png);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+  }
 
   &.page_white {
     background-image: none;
@@ -297,6 +300,22 @@ main {
   }
 }
 
+.allBoxBlue {
+  display: inline-block;
+  width: 100%;
+  @include clearfix();
+  padding: 25px 15px;
+  background-color: $blue;
+}
+
+.allBoxGrey {
+  display: inline-block;
+  width: 100%;
+  @include clearfix();
+  padding: 25px 15px;
+  background-color: $grey_l;
+}
+
 .all_boxs {
   display: inline-block;
   width: 100%;
@@ -350,6 +369,7 @@ main {
 }
 
 #cate_boxs {
+
   @include range-width(0, 450px) {
     width: 100%;
     overflow-x: scroll;
