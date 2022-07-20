@@ -1,5 +1,5 @@
 @import "Ginkgo";
-@import "color";
+@import "coloram";
 @import "text";
 @import "space";
 @import "other";
@@ -30,7 +30,7 @@ button {
   @include transition(all .3s);
 
   &:hover, &:active {
-    color: $blue_l;
+    color: #2d2d2d;
   }
 }
 
@@ -256,7 +256,7 @@ button {
   @include transition(all .3s);
 
   &:hover, &:active {
-    color: $orange;
+    color: #2d2d2d;
   }
 }
 
@@ -264,7 +264,7 @@ button {
   color: $grey_t !important;
 
   &:hover, &:active {
-    color: $blue_l !important;
+    color: $blue !important;
   }
 }
 
@@ -280,7 +280,7 @@ button {
   }
 
   &:hover, &:active {
-    color: $orange;
+    color: #2d2d2d;
   }
 
   &[data-count] {

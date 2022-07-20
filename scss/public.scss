@@ -1,5 +1,5 @@
 @import "Ginkgo";
-@import "color";
+@import "coloram";
 @import "text";
 @import "space";
 @import "other";
@@ -908,7 +908,7 @@ main {
           .dot {
             @if ($i == $j) {
               &:nth-child(#{$j}) {
-                background-color: rgba(83, 117, 152, 1.00);
+                background-color: $blue_m;
               }
             }
           }
@@ -932,7 +932,7 @@ main {
           .dot {
             @if ($i == $j) {
               &:nth-child(#{$j}) {
-                background-color: rgba(83, 117, 152, 1.00);
+                background-color: $blue_m;
               }
             }
           }
@@ -956,7 +956,7 @@ main {
           .dot {
             @if ($i == $j) {
               &:nth-child(#{$j}) {
-                background-color: rgba(83, 117, 152, 1.00);
+                background-color: $blue_m;
               }
             }
           }
@@ -979,7 +979,7 @@ main {
           .dot {
             @if ($i == $j) {
               &:nth-child(#{$j}) {
-                background-color: rgba(83, 117, 152, 1.00);
+                background-color: $blue_m;
               }
             }
           }
