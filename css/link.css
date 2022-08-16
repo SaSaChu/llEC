@@ -7,7 +7,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .f_nav { display: inline-block; color: white; font-size: 1rem; float: left; margin-right: 50px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .f_nav:hover, .f_nav:active { color: #2d2d2d; }
 
-.pro_link { display: inline-block; width: 100%; height: 100%; border: 2px solid transparent; background-color: transparent; position: absolute; top: 0; left: 0; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; z-index: 1111; }
+.pro_link { display: inline-block; width: 100%; height: 100%; border: 2px solid transparent; background-color: transparent; position: absolute; top: 0; left: 0; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; z-index: 1000; }
 .pro_link:hover, .pro_link:active { border: 2px solid #16948c; }
 
 .like { display: inline-block; width: 25px; height: 25px; position: absolute; right: 15px; z-index: 2222; }
@@ -18,7 +18,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 .cate_link { display: inline-block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
 
-.btn_car { display: inline-block; width: 40px; height: 40px; position: absolute; top: 15px; right: 15px; z-index: 2222; background-color: rgba(255, 255, 255, 0.8); -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; font-size: 1.3rem; color: #fd472a; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn_car { display: inline-block; width: 40px; height: 40px; position: absolute; top: 15px; right: 15px; z-index: 111; background-color: rgba(255, 255, 255, 0.8); -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; font-size: 1.3rem; color: #fd472a; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .btn_car.btn_trash { color: #8e8e8e; font-size: 1.2; }
 .btn_car.btn_trash:hover, .btn_car.btn_trash:active, .btn_car.btn_trash:focus { background-color: #8e8e8e; color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { .btn_car { width: 35px; height: 35px; font-size: 1.2rem; top: 10px; right: 10px; } }
@@ -254,6 +254,10 @@ img { vertical-align: middle; }
 
 .send_in_t { display: inline-block; width: 100%; border: 1px solid #8e8e8e; padding: 10px; margin-top: 8px; }
 
+.h155 { display: inline-block; height: 100%; min-height: 155px; }
+
+.h75 { display: inline-block; height: 100%; min-height: 75px; }
+
 .pad_T50 { padding-top: 50px; }
 @media screen and (max-width: 449px) and (min-width: 0) { .pad_T50 { padding-top: 25px; } }
 
@@ -447,7 +451,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 .f_nav { display: inline-block; color: white; font-size: 1rem; float: left; margin-right: 50px; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .f_nav:hover, .f_nav:active { color: #2d2d2d; }
 
-.pro_link { display: inline-block; width: 100%; height: 100%; border: 2px solid transparent; background-color: transparent; position: absolute; top: 0; left: 0; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; z-index: 1111; }
+.pro_link { display: inline-block; width: 100%; height: 100%; border: 2px solid transparent; background-color: transparent; position: absolute; top: 0; left: 0; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; z-index: 1000; }
 .pro_link:hover, .pro_link:active { border: 2px solid #16948c; }
 
 .like { display: inline-block; width: 25px; height: 25px; position: absolute; right: 15px; z-index: 2222; }
@@ -458,7 +462,7 @@ button { display: inline-block; cursor: pointer; outline: 0; border: 0; backgrou
 
 .cate_link { display: inline-block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
 
-.btn_car { display: inline-block; width: 40px; height: 40px; position: absolute; top: 15px; right: 15px; z-index: 2222; background-color: rgba(255, 255, 255, 0.8); -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; font-size: 1.3rem; color: #fd472a; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.btn_car { display: inline-block; width: 40px; height: 40px; position: absolute; top: 15px; right: 15px; z-index: 111; background-color: rgba(255, 255, 255, 0.8); -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; font-size: 1.3rem; color: #fd472a; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
 .btn_car.btn_trash { color: #8e8e8e; font-size: 1.2; }
 .btn_car.btn_trash:hover, .btn_car.btn_trash:active, .btn_car.btn_trash:focus { background-color: #8e8e8e; color: white; }
 @media screen and (max-width: 449px) and (min-width: 0) { .btn_car { width: 35px; height: 35px; font-size: 1.2rem; top: 10px; right: 10px; } }

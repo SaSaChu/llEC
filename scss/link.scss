@@ -44,7 +44,7 @@ button {
   top: 0;
   left: 0;
   @include transition(all .3s);
-  z-index: 1111;
+  z-index: 1000;
 
   &:hover, &:active {
     border: 2px solid $blue;
@@ -100,7 +100,7 @@ button {
   position: absolute;
   top: 15px;
   right: 15px;
-  z-index: 2222;
+  z-index: 111;
   background-color: rgba(255, 255, 255, .8);
   @include border-radius(20px);
   font-size: 1.3rem;
