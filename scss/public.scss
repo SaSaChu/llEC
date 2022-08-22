@@ -1175,7 +1175,15 @@ main {
 
 
 
-
+.test-mobile {
+  display: none;
+  @include range-width(0, 815px) {
+    display: inline-block;
+    max-width: 815px;
+    width: 100%;
+  }
+  
+}
 
 
 
